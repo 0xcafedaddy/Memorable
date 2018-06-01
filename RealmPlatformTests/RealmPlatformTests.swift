@@ -1,15 +1,15 @@
 //
-//  RealmPlatfromTests.swift
-//  RealmPlatfromTests
+//  RealmPlatformTests.swift
+//  RealmPlatformTests
 //
 //  Created by jarvis on 2018/6/1.
 //  Copyright © 2018年 JarvisWu. All rights reserved.
 //
 
 import XCTest
-@testable import RealmPlatfrom
+@testable import RealmPlatform
 
-class RealmPlatfromTests: XCTestCase {
+class RealmPlatformTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
