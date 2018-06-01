@@ -15,6 +15,21 @@
 		63A28BB720C11FB300701927 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A28BB520C11FB300701927 /* LaunchScreen.storyboard */; };
 		63A28BC220C11FB300701927 /* MemorableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A28BC120C11FB300701927 /* MemorableTests.swift */; };
 		63A28BCD20C11FB300701927 /* MemorableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A28BCC20C11FB300701927 /* MemorableUITests.swift */; };
+		63A28BED20C12BEF00701927 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A28BE420C12BEE00701927 /* Domain.framework */; };
+		63A28BF420C12BEF00701927 /* DomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A28BF320C12BEF00701927 /* DomainTests.swift */; };
+		63A28BF620C12BEF00701927 /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 63A28BE620C12BEF00701927 /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63A28BF920C12BEF00701927 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A28BE420C12BEE00701927 /* Domain.framework */; };
+		63A28BFA20C12BEF00701927 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 63A28BE420C12BEE00701927 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		63A28C1020C12C4900701927 /* RealmPlatfrom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A28C0720C12C4900701927 /* RealmPlatfrom.framework */; };
+		63A28C1720C12C4A00701927 /* RealmPlatfromTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A28C1620C12C4A00701927 /* RealmPlatfromTests.swift */; };
+		63A28C1920C12C4A00701927 /* RealmPlatfrom.h in Headers */ = {isa = PBXBuildFile; fileRef = 63A28C0920C12C4900701927 /* RealmPlatfrom.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63A28C1C20C12C4A00701927 /* RealmPlatfrom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A28C0720C12C4900701927 /* RealmPlatfrom.framework */; };
+		63A28C1D20C12C4A00701927 /* RealmPlatfrom.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 63A28C0720C12C4900701927 /* RealmPlatfrom.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		63A28C3220C12C6B00701927 /* NetworkPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A28C2920C12C6B00701927 /* NetworkPlatform.framework */; };
+		63A28C3920C12C6C00701927 /* NetworkPlatformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A28C3820C12C6C00701927 /* NetworkPlatformTests.swift */; };
+		63A28C3B20C12C6C00701927 /* NetworkPlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 63A28C2B20C12C6B00701927 /* NetworkPlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63A28C3E20C12C6C00701927 /* NetworkPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A28C2920C12C6B00701927 /* NetworkPlatform.framework */; };
+		63A28C3F20C12C6C00701927 /* NetworkPlatform.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 63A28C2920C12C6B00701927 /* NetworkPlatform.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +47,86 @@
 			remoteGlobalIDString = 63A28BA620C11FB300701927;
 			remoteInfo = Memorable;
 		};
+		63A28BEE20C12BEF00701927 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63A28B9F20C11FB300701927 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63A28BE320C12BEE00701927;
+			remoteInfo = Domain;
+		};
+		63A28BF020C12BEF00701927 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63A28B9F20C11FB300701927 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63A28BA620C11FB300701927;
+			remoteInfo = Memorable;
+		};
+		63A28BF720C12BEF00701927 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63A28B9F20C11FB300701927 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63A28BE320C12BEE00701927;
+			remoteInfo = Domain;
+		};
+		63A28C1120C12C4900701927 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63A28B9F20C11FB300701927 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63A28C0620C12C4900701927;
+			remoteInfo = RealmPlatfrom;
+		};
+		63A28C1320C12C4900701927 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63A28B9F20C11FB300701927 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63A28BA620C11FB300701927;
+			remoteInfo = Memorable;
+		};
+		63A28C1A20C12C4A00701927 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63A28B9F20C11FB300701927 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63A28C0620C12C4900701927;
+			remoteInfo = RealmPlatfrom;
+		};
+		63A28C3320C12C6B00701927 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63A28B9F20C11FB300701927 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63A28C2820C12C6B00701927;
+			remoteInfo = NetworkPlatform;
+		};
+		63A28C3520C12C6C00701927 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63A28B9F20C11FB300701927 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63A28BA620C11FB300701927;
+			remoteInfo = Memorable;
+		};
+		63A28C3C20C12C6C00701927 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63A28B9F20C11FB300701927 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63A28C2820C12C6B00701927;
+			remoteInfo = NetworkPlatform;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		63A28BFE20C12BEF00701927 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				63A28BFA20C12BEF00701927 /* Domain.framework in Embed Frameworks */,
+				63A28C3F20C12C6C00701927 /* NetworkPlatform.framework in Embed Frameworks */,
+				63A28C1D20C12C4A00701927 /* RealmPlatfrom.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		63A28BA720C11FB300701927 /* Memorable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memorable.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +143,24 @@
 		63A28BC820C11FB300701927 /* MemorableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemorableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63A28BCC20C11FB300701927 /* MemorableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorableUITests.swift; sourceTree = "<group>"; };
 		63A28BCE20C11FB300701927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63A28BE420C12BEE00701927 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63A28BE620C12BEF00701927 /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
+		63A28BE720C12BEF00701927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63A28BEC20C12BEF00701927 /* DomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63A28BF320C12BEF00701927 /* DomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainTests.swift; sourceTree = "<group>"; };
+		63A28BF520C12BEF00701927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63A28C0720C12C4900701927 /* RealmPlatfrom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RealmPlatfrom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63A28C0920C12C4900701927 /* RealmPlatfrom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RealmPlatfrom.h; sourceTree = "<group>"; };
+		63A28C0A20C12C4900701927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63A28C0F20C12C4900701927 /* RealmPlatfromTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealmPlatfromTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63A28C1620C12C4A00701927 /* RealmPlatfromTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmPlatfromTests.swift; sourceTree = "<group>"; };
+		63A28C1820C12C4A00701927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63A28C2920C12C6B00701927 /* NetworkPlatform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkPlatform.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63A28C2B20C12C6B00701927 /* NetworkPlatform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkPlatform.h; sourceTree = "<group>"; };
+		63A28C2C20C12C6B00701927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63A28C3120C12C6B00701927 /* NetworkPlatformTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkPlatformTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63A28C3820C12C6C00701927 /* NetworkPlatformTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPlatformTests.swift; sourceTree = "<group>"; };
+		63A28C3A20C12C6C00701927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +168,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63A28BF920C12BEF00701927 /* Domain.framework in Frameworks */,
+				63A28C3E20C12C6C00701927 /* NetworkPlatform.framework in Frameworks */,
+				63A28C1C20C12C4A00701927 /* RealmPlatfrom.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +188,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		63A28BE020C12BEE00701927 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A28BE920C12BEF00701927 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A28BED20C12BEF00701927 /* Domain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A28C0320C12C4900701927 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A28C0C20C12C4900701927 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A28C1020C12C4900701927 /* RealmPlatfrom.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A28C2520C12C6B00701927 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A28C2E20C12C6B00701927 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A28C3220C12C6B00701927 /* NetworkPlatform.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +242,12 @@
 				63A28BA920C11FB300701927 /* Memorable */,
 				63A28BC020C11FB300701927 /* MemorableTests */,
 				63A28BCB20C11FB300701927 /* MemorableUITests */,
+				63A28BE520C12BEF00701927 /* Domain */,
+				63A28BF220C12BEF00701927 /* DomainTests */,
+				63A28C0820C12C4900701927 /* RealmPlatfrom */,
+				63A28C1520C12C4A00701927 /* RealmPlatfromTests */,
+				63A28C2A20C12C6B00701927 /* NetworkPlatform */,
+				63A28C3720C12C6C00701927 /* NetworkPlatformTests */,
 				63A28BA820C11FB300701927 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +258,12 @@
 				63A28BA720C11FB300701927 /* Memorable.app */,
 				63A28BBD20C11FB300701927 /* MemorableTests.xctest */,
 				63A28BC820C11FB300701927 /* MemorableUITests.xctest */,
+				63A28BE420C12BEE00701927 /* Domain.framework */,
+				63A28BEC20C12BEF00701927 /* DomainTests.xctest */,
+				63A28C0720C12C4900701927 /* RealmPlatfrom.framework */,
+				63A28C0F20C12C4900701927 /* RealmPlatfromTests.xctest */,
+				63A28C2920C12C6B00701927 /* NetworkPlatform.framework */,
+				63A28C3120C12C6B00701927 /* NetworkPlatformTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +271,10 @@
 		63A28BA920C11FB300701927 /* Memorable */ = {
 			isa = PBXGroup;
 			children = (
+				63A28BDD20C1295D00701927 /* Utility */,
+				63A28BDC20C1295000701927 /* Scenes */,
+				63A28BDB20C1294800701927 /* Common */,
+				63A28BDA20C1293700701927 /* Application */,
 				63A28BAA20C11FB300701927 /* AppDelegate.swift */,
 				63A28BAC20C11FB300701927 /* FirstViewController.swift */,
 				63A28BAE20C11FB300701927 /* SecondViewController.swift */,
@@ -128,7 +304,124 @@
 			path = MemorableUITests;
 			sourceTree = "<group>";
 		};
+		63A28BDA20C1293700701927 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		63A28BDB20C1294800701927 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		63A28BDC20C1295000701927 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				63A28BDE20C1299D00701927 /* New Group */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		63A28BDD20C1295D00701927 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		63A28BDE20C1299D00701927 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		63A28BE520C12BEF00701927 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				63A28BE620C12BEF00701927 /* Domain.h */,
+				63A28BE720C12BEF00701927 /* Info.plist */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		63A28BF220C12BEF00701927 /* DomainTests */ = {
+			isa = PBXGroup;
+			children = (
+				63A28BF320C12BEF00701927 /* DomainTests.swift */,
+				63A28BF520C12BEF00701927 /* Info.plist */,
+			);
+			path = DomainTests;
+			sourceTree = "<group>";
+		};
+		63A28C0820C12C4900701927 /* RealmPlatfrom */ = {
+			isa = PBXGroup;
+			children = (
+				63A28C0920C12C4900701927 /* RealmPlatfrom.h */,
+				63A28C0A20C12C4900701927 /* Info.plist */,
+			);
+			path = RealmPlatfrom;
+			sourceTree = "<group>";
+		};
+		63A28C1520C12C4A00701927 /* RealmPlatfromTests */ = {
+			isa = PBXGroup;
+			children = (
+				63A28C1620C12C4A00701927 /* RealmPlatfromTests.swift */,
+				63A28C1820C12C4A00701927 /* Info.plist */,
+			);
+			path = RealmPlatfromTests;
+			sourceTree = "<group>";
+		};
+		63A28C2A20C12C6B00701927 /* NetworkPlatform */ = {
+			isa = PBXGroup;
+			children = (
+				63A28C2B20C12C6B00701927 /* NetworkPlatform.h */,
+				63A28C2C20C12C6B00701927 /* Info.plist */,
+			);
+			path = NetworkPlatform;
+			sourceTree = "<group>";
+		};
+		63A28C3720C12C6C00701927 /* NetworkPlatformTests */ = {
+			isa = PBXGroup;
+			children = (
+				63A28C3820C12C6C00701927 /* NetworkPlatformTests.swift */,
+				63A28C3A20C12C6C00701927 /* Info.plist */,
+			);
+			path = NetworkPlatformTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		63A28BE120C12BEE00701927 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A28BF620C12BEF00701927 /* Domain.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A28C0420C12C4900701927 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A28C1920C12C4A00701927 /* RealmPlatfrom.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A28C2620C12C6B00701927 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A28C3B20C12C6C00701927 /* NetworkPlatform.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		63A28BA620C11FB300701927 /* Memorable */ = {
@@ -138,10 +431,14 @@
 				63A28BA320C11FB300701927 /* Sources */,
 				63A28BA420C11FB300701927 /* Frameworks */,
 				63A28BA520C11FB300701927 /* Resources */,
+				63A28BFE20C12BEF00701927 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				63A28BF820C12BEF00701927 /* PBXTargetDependency */,
+				63A28C1B20C12C4A00701927 /* PBXTargetDependency */,
+				63A28C3D20C12C6C00701927 /* PBXTargetDependency */,
 			);
 			name = Memorable;
 			productName = Memorable;
@@ -184,6 +481,117 @@
 			productReference = 63A28BC820C11FB300701927 /* MemorableUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		63A28BE320C12BEE00701927 /* Domain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63A28BFB20C12BEF00701927 /* Build configuration list for PBXNativeTarget "Domain" */;
+			buildPhases = (
+				63A28BDF20C12BEE00701927 /* Sources */,
+				63A28BE020C12BEE00701927 /* Frameworks */,
+				63A28BE120C12BEE00701927 /* Headers */,
+				63A28BE220C12BEE00701927 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Domain;
+			productName = Domain;
+			productReference = 63A28BE420C12BEE00701927 /* Domain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		63A28BEB20C12BEF00701927 /* DomainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63A28BFF20C12BEF00701927 /* Build configuration list for PBXNativeTarget "DomainTests" */;
+			buildPhases = (
+				63A28BE820C12BEF00701927 /* Sources */,
+				63A28BE920C12BEF00701927 /* Frameworks */,
+				63A28BEA20C12BEF00701927 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63A28BEF20C12BEF00701927 /* PBXTargetDependency */,
+				63A28BF120C12BEF00701927 /* PBXTargetDependency */,
+			);
+			name = DomainTests;
+			productName = DomainTests;
+			productReference = 63A28BEC20C12BEF00701927 /* DomainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		63A28C0620C12C4900701927 /* RealmPlatfrom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63A28C1E20C12C4A00701927 /* Build configuration list for PBXNativeTarget "RealmPlatfrom" */;
+			buildPhases = (
+				63A28C0220C12C4900701927 /* Sources */,
+				63A28C0320C12C4900701927 /* Frameworks */,
+				63A28C0420C12C4900701927 /* Headers */,
+				63A28C0520C12C4900701927 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RealmPlatfrom;
+			productName = RealmPlatfrom;
+			productReference = 63A28C0720C12C4900701927 /* RealmPlatfrom.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		63A28C0E20C12C4900701927 /* RealmPlatfromTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63A28C2120C12C4A00701927 /* Build configuration list for PBXNativeTarget "RealmPlatfromTests" */;
+			buildPhases = (
+				63A28C0B20C12C4900701927 /* Sources */,
+				63A28C0C20C12C4900701927 /* Frameworks */,
+				63A28C0D20C12C4900701927 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63A28C1220C12C4900701927 /* PBXTargetDependency */,
+				63A28C1420C12C4900701927 /* PBXTargetDependency */,
+			);
+			name = RealmPlatfromTests;
+			productName = RealmPlatfromTests;
+			productReference = 63A28C0F20C12C4900701927 /* RealmPlatfromTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		63A28C2820C12C6B00701927 /* NetworkPlatform */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63A28C4020C12C6C00701927 /* Build configuration list for PBXNativeTarget "NetworkPlatform" */;
+			buildPhases = (
+				63A28C2420C12C6B00701927 /* Sources */,
+				63A28C2520C12C6B00701927 /* Frameworks */,
+				63A28C2620C12C6B00701927 /* Headers */,
+				63A28C2720C12C6B00701927 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetworkPlatform;
+			productName = NetworkPlatform;
+			productReference = 63A28C2920C12C6B00701927 /* NetworkPlatform.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		63A28C3020C12C6B00701927 /* NetworkPlatformTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63A28C4320C12C6C00701927 /* Build configuration list for PBXNativeTarget "NetworkPlatformTests" */;
+			buildPhases = (
+				63A28C2D20C12C6B00701927 /* Sources */,
+				63A28C2E20C12C6B00701927 /* Frameworks */,
+				63A28C2F20C12C6B00701927 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63A28C3420C12C6B00701927 /* PBXTargetDependency */,
+				63A28C3620C12C6C00701927 /* PBXTargetDependency */,
+			);
+			name = NetworkPlatformTests;
+			productName = NetworkPlatformTests;
+			productReference = 63A28C3120C12C6B00701927 /* NetworkPlatformTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -208,6 +616,33 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 63A28BA620C11FB300701927;
 					};
+					63A28BE320C12BEE00701927 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					63A28BEB20C12BEF00701927 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 63A28BA620C11FB300701927;
+					};
+					63A28C0620C12C4900701927 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					63A28C0E20C12C4900701927 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 63A28BA620C11FB300701927;
+					};
+					63A28C2820C12C6B00701927 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					63A28C3020C12C6B00701927 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 63A28BA620C11FB300701927;
+					};
 				};
 			};
 			buildConfigurationList = 63A28BA220C11FB300701927 /* Build configuration list for PBXProject "Memorable" */;
@@ -226,6 +661,12 @@
 				63A28BA620C11FB300701927 /* Memorable */,
 				63A28BBC20C11FB300701927 /* MemorableTests */,
 				63A28BC720C11FB300701927 /* MemorableUITests */,
+				63A28BE320C12BEE00701927 /* Domain */,
+				63A28BEB20C12BEF00701927 /* DomainTests */,
+				63A28C0620C12C4900701927 /* RealmPlatfrom */,
+				63A28C0E20C12C4900701927 /* RealmPlatfromTests */,
+				63A28C2820C12C6B00701927 /* NetworkPlatform */,
+				63A28C3020C12C6B00701927 /* NetworkPlatformTests */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +690,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		63A28BC620C11FB300701927 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A28BE220C12BEE00701927 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A28BEA20C12BEF00701927 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A28C0520C12C4900701927 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A28C0D20C12C4900701927 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A28C2720C12C6B00701927 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A28C2F20C12C6B00701927 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -284,6 +767,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		63A28BDF20C12BEE00701927 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A28BE820C12BEF00701927 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A28BF420C12BEF00701927 /* DomainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A28C0220C12C4900701927 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A28C0B20C12C4900701927 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A28C1720C12C4A00701927 /* RealmPlatfromTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A28C2420C12C6B00701927 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A28C2D20C12C6B00701927 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A28C3920C12C6C00701927 /* NetworkPlatformTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -296,6 +824,51 @@
 			isa = PBXTargetDependency;
 			target = 63A28BA620C11FB300701927 /* Memorable */;
 			targetProxy = 63A28BC920C11FB300701927 /* PBXContainerItemProxy */;
+		};
+		63A28BEF20C12BEF00701927 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63A28BE320C12BEE00701927 /* Domain */;
+			targetProxy = 63A28BEE20C12BEF00701927 /* PBXContainerItemProxy */;
+		};
+		63A28BF120C12BEF00701927 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63A28BA620C11FB300701927 /* Memorable */;
+			targetProxy = 63A28BF020C12BEF00701927 /* PBXContainerItemProxy */;
+		};
+		63A28BF820C12BEF00701927 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63A28BE320C12BEE00701927 /* Domain */;
+			targetProxy = 63A28BF720C12BEF00701927 /* PBXContainerItemProxy */;
+		};
+		63A28C1220C12C4900701927 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63A28C0620C12C4900701927 /* RealmPlatfrom */;
+			targetProxy = 63A28C1120C12C4900701927 /* PBXContainerItemProxy */;
+		};
+		63A28C1420C12C4900701927 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63A28BA620C11FB300701927 /* Memorable */;
+			targetProxy = 63A28C1320C12C4900701927 /* PBXContainerItemProxy */;
+		};
+		63A28C1B20C12C4A00701927 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63A28C0620C12C4900701927 /* RealmPlatfrom */;
+			targetProxy = 63A28C1A20C12C4A00701927 /* PBXContainerItemProxy */;
+		};
+		63A28C3420C12C6B00701927 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63A28C2820C12C6B00701927 /* NetworkPlatform */;
+			targetProxy = 63A28C3320C12C6B00701927 /* PBXContainerItemProxy */;
+		};
+		63A28C3620C12C6C00701927 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63A28BA620C11FB300701927 /* Memorable */;
+			targetProxy = 63A28C3520C12C6C00701927 /* PBXContainerItemProxy */;
+		};
+		63A28C3D20C12C6C00701927 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63A28C2820C12C6B00701927 /* NetworkPlatform */;
+			targetProxy = 63A28C3C20C12C6C00701927 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -522,6 +1095,246 @@
 			};
 			name = Release;
 		};
+		63A28BFC20C12BEF00701927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3Q45W4GD72;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Domain/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JarvisWu.Domain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		63A28BFD20C12BEF00701927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3Q45W4GD72;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Domain/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JarvisWu.Domain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		63A28C0020C12BEF00701927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Q45W4GD72;
+				INFOPLIST_FILE = DomainTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JarvisWu.DomainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Memorable.app/Memorable";
+			};
+			name = Debug;
+		};
+		63A28C0120C12BEF00701927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Q45W4GD72;
+				INFOPLIST_FILE = DomainTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JarvisWu.DomainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Memorable.app/Memorable";
+			};
+			name = Release;
+		};
+		63A28C1F20C12C4A00701927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3Q45W4GD72;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RealmPlatfrom/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JarvisWu.RealmPlatfrom;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		63A28C2020C12C4A00701927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3Q45W4GD72;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RealmPlatfrom/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JarvisWu.RealmPlatfrom;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		63A28C2220C12C4A00701927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Q45W4GD72;
+				INFOPLIST_FILE = RealmPlatfromTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JarvisWu.RealmPlatfromTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Memorable.app/Memorable";
+			};
+			name = Debug;
+		};
+		63A28C2320C12C4A00701927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Q45W4GD72;
+				INFOPLIST_FILE = RealmPlatfromTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JarvisWu.RealmPlatfromTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Memorable.app/Memorable";
+			};
+			name = Release;
+		};
+		63A28C4120C12C6C00701927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3Q45W4GD72;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NetworkPlatform/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JarvisWu.NetworkPlatform;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		63A28C4220C12C6C00701927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3Q45W4GD72;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NetworkPlatform/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JarvisWu.NetworkPlatform;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		63A28C4420C12C6C00701927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Q45W4GD72;
+				INFOPLIST_FILE = NetworkPlatformTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JarvisWu.NetworkPlatformTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Memorable.app/Memorable";
+			};
+			name = Debug;
+		};
+		63A28C4520C12C6C00701927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Q45W4GD72;
+				INFOPLIST_FILE = NetworkPlatformTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JarvisWu.NetworkPlatformTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Memorable.app/Memorable";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -557,6 +1370,60 @@
 			buildConfigurations = (
 				63A28BD820C11FB300701927 /* Debug */,
 				63A28BD920C11FB300701927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63A28BFB20C12BEF00701927 /* Build configuration list for PBXNativeTarget "Domain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63A28BFC20C12BEF00701927 /* Debug */,
+				63A28BFD20C12BEF00701927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63A28BFF20C12BEF00701927 /* Build configuration list for PBXNativeTarget "DomainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63A28C0020C12BEF00701927 /* Debug */,
+				63A28C0120C12BEF00701927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63A28C1E20C12C4A00701927 /* Build configuration list for PBXNativeTarget "RealmPlatfrom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63A28C1F20C12C4A00701927 /* Debug */,
+				63A28C2020C12C4A00701927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63A28C2120C12C4A00701927 /* Build configuration list for PBXNativeTarget "RealmPlatfromTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63A28C2220C12C4A00701927 /* Debug */,
+				63A28C2320C12C4A00701927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63A28C4020C12C6C00701927 /* Build configuration list for PBXNativeTarget "NetworkPlatform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63A28C4120C12C6C00701927 /* Debug */,
+				63A28C4220C12C6C00701927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63A28C4320C12C6C00701927 /* Build configuration list for PBXNativeTarget "NetworkPlatformTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63A28C4420C12C6C00701927 /* Debug */,
+				63A28C4520C12C6C00701927 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
