@@ -50,6 +50,22 @@
 		63A28C9220C2937F00701927 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A28C9120C2937F00701927 /* Repository.swift */; };
 		63A28C9520C293B400701927 /* DomainConvertibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A28C9420C293B400701927 /* DomainConvertibleType.swift */; };
 		63A28C9720C293C400701927 /* RealmRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A28C9620C293C400701927 /* RealmRepresentable.swift */; };
+		63A28C9E20C2C05F00701927 /* BrowseNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A28C9D20C2C05F00701927 /* BrowseNavigator.swift */; };
+		63A28CA020C2C08C00701927 /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A28C9F20C2C08C00701927 /* BrowseViewController.swift */; };
+		63A28CA220C2C0A400701927 /* BrowseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A28CA120C2C0A400701927 /* BrowseViewModel.swift */; };
+		63A28CA420C2C0C300701927 /* RecordNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A28CA320C2C0C300701927 /* RecordNavigator.swift */; };
+		63A28CA620C2C0D200701927 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A28CA520C2C0D200701927 /* RecordViewController.swift */; };
+		63A28CA820C2C0EB00701927 /* RecordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A28CA720C2C0EB00701927 /* RecordViewModel.swift */; };
+		63A28CAA20C2C11400701927 /* CategoryNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A28CA920C2C11400701927 /* CategoryNavigator.swift */; };
+		63A28CAC20C2C12600701927 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A28CAB20C2C12600701927 /* CategoryViewController.swift */; };
+		63A28CAE20C2C14000701927 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A28CAD20C2C14000701927 /* CategoryViewModel.swift */; };
+		63A28CB020C2C15E00701927 /* PersonInfoNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A28CAF20C2C15E00701927 /* PersonInfoNavigator.swift */; };
+		63A28CB220C2C17800701927 /* PersonInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A28CB120C2C17800701927 /* PersonInfoViewController.swift */; };
+		63A28CB420C2C18600701927 /* PersonInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A28CB320C2C18600701927 /* PersonInfoViewModel.swift */; };
+		63A28CB620C2C19C00701927 /* CreatNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A28CB520C2C19C00701927 /* CreatNavigator.swift */; };
+		63A28CB820C2C1B300701927 /* CreatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A28CB720C2C1B300701927 /* CreatViewController.swift */; };
+		63A28CBA20C2C1C200701927 /* CreatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A28CB920C2C1C200701927 /* CreatViewModel.swift */; };
+		63A28CBC20C2C36200701927 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A28CBB20C2C36200701927 /* ViewModelType.swift */; };
 		88F3C0FFDA53F083F7C0F822 /* Pods_DomainTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF1A1459442BFB24DC773F0A /* Pods_DomainTests.framework */; };
 		8AFA0E846AA078B3D2414B3E /* Pods_MemorableTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6405818B71A03D085F8716C5 /* Pods_MemorableTests.framework */; };
 		FE794F29396987CE12EA45D1 /* Pods_RealmPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E95CAA6ED04FAC9073D7E8A2 /* Pods_RealmPlatform.framework */; };
@@ -205,6 +221,22 @@
 		63A28C9120C2937F00701927 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		63A28C9420C293B400701927 /* DomainConvertibleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainConvertibleType.swift; sourceTree = "<group>"; };
 		63A28C9620C293C400701927 /* RealmRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmRepresentable.swift; sourceTree = "<group>"; };
+		63A28C9D20C2C05F00701927 /* BrowseNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseNavigator.swift; sourceTree = "<group>"; };
+		63A28C9F20C2C08C00701927 /* BrowseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
+		63A28CA120C2C0A400701927 /* BrowseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseViewModel.swift; sourceTree = "<group>"; };
+		63A28CA320C2C0C300701927 /* RecordNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordNavigator.swift; sourceTree = "<group>"; };
+		63A28CA520C2C0D200701927 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		63A28CA720C2C0EB00701927 /* RecordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewModel.swift; sourceTree = "<group>"; };
+		63A28CA920C2C11400701927 /* CategoryNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryNavigator.swift; sourceTree = "<group>"; };
+		63A28CAB20C2C12600701927 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		63A28CAD20C2C14000701927 /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
+		63A28CAF20C2C15E00701927 /* PersonInfoNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoNavigator.swift; sourceTree = "<group>"; };
+		63A28CB120C2C17800701927 /* PersonInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoViewController.swift; sourceTree = "<group>"; };
+		63A28CB320C2C18600701927 /* PersonInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoViewModel.swift; sourceTree = "<group>"; };
+		63A28CB520C2C19C00701927 /* CreatNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatNavigator.swift; sourceTree = "<group>"; };
+		63A28CB720C2C1B300701927 /* CreatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatViewController.swift; sourceTree = "<group>"; };
+		63A28CB920C2C1C200701927 /* CreatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatViewModel.swift; sourceTree = "<group>"; };
+		63A28CBB20C2C36200701927 /* ViewModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		6405818B71A03D085F8716C5 /* Pods_MemorableTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MemorableTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C4F8E88F174FFFC678938A4 /* Pods-Memorable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memorable.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Memorable/Pods-Memorable.debug.xcconfig"; sourceTree = "<group>"; };
 		75186C69A345938E4B839359 /* Pods-RealmPlatform.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmPlatform.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmPlatform/Pods-RealmPlatform.release.xcconfig"; sourceTree = "<group>"; };
@@ -410,6 +442,7 @@
 		63A28BDB20C1294800701927 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				63A28CBB20C2C36200701927 /* ViewModelType.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -417,7 +450,11 @@
 		63A28BDC20C1295000701927 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				63A28BDE20C1299D00701927 /* New Group */,
+				63A28C9C20C2BFB500701927 /* Record */,
+				63A28C9B20C2BF7E00701927 /* Category */,
+				63A28C9920C2B59A00701927 /* Browse */,
+				63A28C9820C2B54B00701927 /* PersonInfo */,
+				63A28BDE20C1299D00701927 /* Creat */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -429,11 +466,14 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
-		63A28BDE20C1299D00701927 /* New Group */ = {
+		63A28BDE20C1299D00701927 /* Creat */ = {
 			isa = PBXGroup;
 			children = (
+				63A28CB520C2C19C00701927 /* CreatNavigator.swift */,
+				63A28CB720C2C1B300701927 /* CreatViewController.swift */,
+				63A28CB920C2C1C200701927 /* CreatViewModel.swift */,
 			);
-			name = "New Group";
+			name = Creat;
 			sourceTree = "<group>";
 		};
 		63A28BE520C12BEF00701927 /* Domain */ = {
@@ -630,6 +670,54 @@
 				63A28C9620C293C400701927 /* RealmRepresentable.swift */,
 			);
 			path = Convertion;
+			sourceTree = "<group>";
+		};
+		63A28C9820C2B54B00701927 /* PersonInfo */ = {
+			isa = PBXGroup;
+			children = (
+				63A28C9A20C2BF4600701927 /* Setting */,
+				63A28CAF20C2C15E00701927 /* PersonInfoNavigator.swift */,
+				63A28CB120C2C17800701927 /* PersonInfoViewController.swift */,
+				63A28CB320C2C18600701927 /* PersonInfoViewModel.swift */,
+			);
+			name = PersonInfo;
+			sourceTree = "<group>";
+		};
+		63A28C9920C2B59A00701927 /* Browse */ = {
+			isa = PBXGroup;
+			children = (
+				63A28C9D20C2C05F00701927 /* BrowseNavigator.swift */,
+				63A28C9F20C2C08C00701927 /* BrowseViewController.swift */,
+				63A28CA120C2C0A400701927 /* BrowseViewModel.swift */,
+			);
+			name = Browse;
+			sourceTree = "<group>";
+		};
+		63A28C9A20C2BF4600701927 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
+		63A28C9B20C2BF7E00701927 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				63A28CA920C2C11400701927 /* CategoryNavigator.swift */,
+				63A28CAB20C2C12600701927 /* CategoryViewController.swift */,
+				63A28CAD20C2C14000701927 /* CategoryViewModel.swift */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		63A28C9C20C2BFB500701927 /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				63A28CA320C2C0C300701927 /* RecordNavigator.swift */,
+				63A28CA520C2C0D200701927 /* RecordViewController.swift */,
+				63A28CA720C2C0EB00701927 /* RecordViewModel.swift */,
+			);
+			name = Record;
 			sourceTree = "<group>";
 		};
 		CD8938CD85EF02B51E3AD5C1 /* Frameworks */ = {
@@ -1437,10 +1525,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63A28CBA20C2C1C200701927 /* CreatViewModel.swift in Sources */,
+				63A28CA020C2C08C00701927 /* BrowseViewController.swift in Sources */,
 				63A28C6920C149B000701927 /* Application.swift in Sources */,
+				63A28CA420C2C0C300701927 /* RecordNavigator.swift in Sources */,
+				63A28CB420C2C18600701927 /* PersonInfoViewModel.swift in Sources */,
+				63A28CA820C2C0EB00701927 /* RecordViewModel.swift in Sources */,
+				63A28CB620C2C19C00701927 /* CreatNavigator.swift in Sources */,
+				63A28CB020C2C15E00701927 /* PersonInfoNavigator.swift in Sources */,
+				63A28CBC20C2C36200701927 /* ViewModelType.swift in Sources */,
+				63A28CAC20C2C12600701927 /* CategoryViewController.swift in Sources */,
+				63A28CA620C2C0D200701927 /* RecordViewController.swift in Sources */,
 				63A28BAF20C11FB300701927 /* SecondViewController.swift in Sources */,
 				63A28BAB20C11FB300701927 /* AppDelegate.swift in Sources */,
+				63A28CA220C2C0A400701927 /* BrowseViewModel.swift in Sources */,
+				63A28CB220C2C17800701927 /* PersonInfoViewController.swift in Sources */,
+				63A28CAE20C2C14000701927 /* CategoryViewModel.swift in Sources */,
+				63A28CB820C2C1B300701927 /* CreatViewController.swift in Sources */,
+				63A28CAA20C2C11400701927 /* CategoryNavigator.swift in Sources */,
 				63A28BAD20C11FB300701927 /* FirstViewController.swift in Sources */,
+				63A28C9E20C2C05F00701927 /* BrowseNavigator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
