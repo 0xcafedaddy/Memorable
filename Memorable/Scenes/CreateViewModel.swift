@@ -1,5 +1,5 @@
 //
-//  CreatViewModel.swift
+//  CreateViewModel.swift
 //  Memorable
 //
 //  Created by jarvis on 2018/6/2.
@@ -11,7 +11,7 @@ import Domain
 import RxSwift
 import RxCocoa
 
-final class CreatViewModel: ViewModelType {
+final class CreateViewModel: ViewModelType {
     
     struct Input {
         

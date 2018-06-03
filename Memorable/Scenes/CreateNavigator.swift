@@ -1,5 +1,5 @@
 //
-//  CreatNavigator.swift
+//  CreateNavigator.swift
 //  Memorable
 //
 //  Created by jarvis on 2018/6/2.
@@ -9,11 +9,11 @@
 import UIKit
 import Domain
 
-protocol CreatNavigator {
+protocol CreateNavigator {
     
 }
 
-class DefaultCreatNavigator: CreatNavigator {
+class DefaultCreateNavigator: CreatNavigator {
     private let storyBoard: UIStoryboard
     private let navigationController: UINavigationController
     private let services: UseCaseProvider

@@ -1,5 +1,5 @@
 //
-//  PersonInfoViewController.swift
+//  CreateViewController.swift
 //  Memorable
 //
 //  Created by jarvis on 2018/6/2.
@@ -11,10 +11,10 @@ import Domain
 import RxSwift
 import RxCocoa
 
-class PersonInfoViewController: UIViewController {
+class CreateViewController: UIViewController {
     private let disposeBag = DisposeBag()
     
-    var viewModel: PersonInfoViewModel!
+    var viewModel: CreateViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
