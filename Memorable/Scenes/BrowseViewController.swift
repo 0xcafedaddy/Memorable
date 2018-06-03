@@ -22,10 +22,10 @@ class BrowseViewController: UIViewController {
     }
     
     private func bindViewModel() {
-        assert(viewModel != nil)
-        let viewWillAppear = rx.sentMessage(#selector(UIViewController.viewWillAppear(_:)))
-            .mapToVoid()
-            .asDriverOnErrorJustComplete()
+//        assert(viewModel != nil)
+//        let viewWillAppear = rx.sentMessage(#selector(UIViewController.viewWillAppear(_:)))
+//            .mapToVoid()
+//            .asDriverOnErrorJustComplete()
     }
 }
 

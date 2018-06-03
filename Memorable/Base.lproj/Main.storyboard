@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--浏览-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="Memorable" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="BrowseViewController" customModule="Memorable" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,7 +41,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                    <tabBarItem key="tabBarItem" title="浏览" image="first" id="acW-dT-cKf" userLabel="浏览" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
                         <connections>
                             <outlet property="animation" destination="oz2-JD-1gv" id="OHP-OT-zrj"/>
                         </connections>
@@ -50,28 +50,28 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
                 <customObject id="oz2-JD-1gv" customClass="RAMFlipBottomTransitionItemAnimations" customModule="RAMAnimatedTabBarController"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="1430" y="-747"/>
         </scene>
-        <!--Item-->
+        <!--记录-->
         <scene sceneID="MmR-lP-gcd">
             <objects>
-                <viewController id="d0i-od-NqE" sceneMemberID="viewController">
+                <viewController id="d0i-od-NqE" customClass="RecordViewController" customModule="Memorable" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YeC-8x-k3X">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="OYc-O6-GNx"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="yaH-Qf-ZCr"/>
+                    <tabBarItem key="tabBarItem" title="记录" image="first" id="yaH-Qf-ZCr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rl5-xL-68o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="1075"/>
+            <point key="canvasLocation" x="1204" y="874"/>
         </scene>
-        <!--Second-->
+        <!--类别-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Memorable" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="CategoryViewController" customModule="Memorable" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -99,7 +99,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                    <tabBarItem key="tabBarItem" title="类别" image="second" id="cPa-gy-q4n" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
                         <connections>
                             <outlet property="animation" destination="C5b-o7-JtM" id="4pt-me-uVq"/>
                         </connections>
@@ -108,7 +108,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
                 <customObject id="C5b-o7-JtM" customClass="RAMBounceAnimation" customModule="RAMAnimatedTabBarController"/>
             </objects>
-            <point key="canvasLocation" x="750" y="360"/>
+            <point key="canvasLocation" x="1430" y="129"/>
+        </scene>
+        <!--创建-->
+        <scene sceneID="74i-A7-zVk">
+            <objects>
+                <viewController id="9pZ-dL-Ebz" customClass="CreateViewController" customModule="Memorable" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qnb-Y2-zBr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="NOr-La-Oo4"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="创建" id="Lac-Yt-TiY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hwo-Wt-h3d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1342" y="-61"/>
         </scene>
         <!--Animated Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -123,11 +139,29 @@
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="d0i-od-NqE" kind="relationship" relationship="viewControllers" id="ppt-n4-SAK"/>
+                        <segue destination="S6P-12-l8P" kind="relationship" relationship="viewControllers" id="6ZG-zq-Wsg"/>
+                        <segue destination="9pZ-dL-Ebz" kind="relationship" relationship="viewControllers" id="FcV-VQ-wrm"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--我的-->
+        <scene sceneID="MEM-uD-klc">
+            <objects>
+                <viewController id="S6P-12-l8P" customClass="PersonInfoViewController" customModule="Memorable" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dAp-nO-6EI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="yeA-WC-Vud"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="我的" id="gvV-3P-0wp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Quu-jF-x79" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-689" y="886"/>
         </scene>
     </scenes>
     <resources>
