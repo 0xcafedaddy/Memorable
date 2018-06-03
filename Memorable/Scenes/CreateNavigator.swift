@@ -13,7 +13,7 @@ protocol CreateNavigator {
     
 }
 
-class DefaultCreateNavigator: CreatNavigator {
+class DefaultCreateNavigator: CreateNavigator {
     private let storyBoard: UIStoryboard
     private let navigationController: UINavigationController
     private let services: UseCaseProvider
