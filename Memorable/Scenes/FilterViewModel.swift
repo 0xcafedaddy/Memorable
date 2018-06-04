@@ -1,5 +1,5 @@
 //
-//  BrowseViewModel.swift
+//  FilterViewModel.swift
 //  Memorable
 //
 //  Created by jarvis on 2018/6/2.
@@ -11,7 +11,7 @@ import Domain
 import RxSwift
 import RxCocoa
 
-final class BrowseViewModel: ViewModelType {
+final class FilterViewModel: ViewModelType {
     
     struct Input {
         
@@ -24,5 +24,4 @@ final class BrowseViewModel: ViewModelType {
         return Output()
     }
 }
-
 

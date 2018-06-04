@@ -22,7 +22,6 @@ target 'Memorable' do
   rx_cocoa
   rx_swift
   pod 'QueryKit'
-  pod 'RAMAnimatedTabBarController'
   target 'MemorableTests' do
     inherit! :search_paths
     test_pods

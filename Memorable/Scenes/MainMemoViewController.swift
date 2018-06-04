@@ -1,5 +1,5 @@
 //
-//  BrowseViewController.swift
+//  MainMemoViewController.swift
 //  Memorable
 //
 //  Created by jarvis on 2018/6/2.
@@ -11,10 +11,10 @@ import Domain
 import RxSwift
 import RxCocoa
 
-class BrowseViewController: UIViewController {
+class MainMemoController: UIViewController {
     private let disposeBag = DisposeBag()
     
-    var viewModel: BrowseViewModel!
+    var viewModel: MainMemoViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()

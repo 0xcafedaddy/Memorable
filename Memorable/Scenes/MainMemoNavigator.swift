@@ -1,5 +1,5 @@
 //
-//  CategoryNavigator.swift
+//  MainMemoNavigator.swift
 //  Memorable
 //
 //  Created by jarvis on 2018/6/2.
@@ -9,11 +9,11 @@
 import UIKit
 import Domain
 
-protocol CategoryNavigator {
+protocol MainMemoNavigator {
     
 }
 
-class DefaultCategoryNavigator: CategoryNavigator {
+class DefaultMainMemoNavigator: MainMemoNavigator {
     private let storyBoard: UIStoryboard
     private let navigationController: UINavigationController
     private let services: UseCaseProvider

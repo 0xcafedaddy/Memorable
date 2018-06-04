@@ -1,5 +1,5 @@
 //
-//  BrowseNavigator.swift
+//  FilterNavigator.swift
 //  Memorable
 //
 //  Created by jarvis on 2018/6/2.
@@ -9,11 +9,11 @@
 import UIKit
 import Domain
 
-protocol BrowseNavigator {
+protocol FilterNavigator {
     
 }
 
-class DefaultBrowseNavigator: BrowseNavigator {
+class DefaultFilterNavigator: FilterNavigator {
     private let storyBoard: UIStoryboard
     private let navigationController: UINavigationController
     private let services: UseCaseProvider

@@ -1,5 +1,5 @@
 //
-//  CategoryViewModel.swift
+//  MainMemoViewModel.swift
 //  Memorable
 //
 //  Created by jarvis on 2018/6/2.
@@ -11,7 +11,7 @@ import Domain
 import RxSwift
 import RxCocoa
 
-final class CategoryViewModel: ViewModelType {
+final class MainMemoViewModel: ViewModelType {
     
     struct Input {
         
@@ -24,4 +24,5 @@ final class CategoryViewModel: ViewModelType {
         return Output()
     }
 }
+
 

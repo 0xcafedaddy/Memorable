@@ -1,5 +1,5 @@
 //
-//  CategoryViewController.swift
+//  FilterViewController.swift
 //  Memorable
 //
 //  Created by jarvis on 2018/6/2.
@@ -11,10 +11,10 @@ import Domain
 import RxSwift
 import RxCocoa
 
-class CategoryViewController: UIViewController {
+class FilterViewController: UIViewController {
     private let disposeBag = DisposeBag()
     
-    var viewModel: CategoryViewModel!
+    var viewModel: FilterViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
