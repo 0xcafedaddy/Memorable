@@ -3,6 +3,7 @@ PODS:
   - AlamofireObjectMapper (5.0.0):
     - Alamofire (~> 4.1)
     - ObjectMapper (~> 3.0)
+  - FoldingCell (3.1.1)
   - Nimble (7.1.1)
   - ObjectMapper (3.1.0)
   - QueryKit (0.13.0)
@@ -30,6 +31,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - AlamofireObjectMapper
+  - FoldingCell
   - Nimble
   - ObjectMapper
   - QueryKit
@@ -45,6 +47,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   AlamofireObjectMapper: 5fafc816351cbbc0d486611aaeba7461c0cbad49
+  FoldingCell: 238c33ae8d9cd655090c9c4c5ff32596cfd18c6e
   Nimble: 391f07782af4b37914f9bd7b2ffbb952731b8202
   ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
   QueryKit: 406c42b9b4eb5f8dab380a9e5bd9ef656542d1f4
@@ -57,6 +60,6 @@ SPEC CHECKSUMS:
   RxSwift: e49536837d9901277638493ea537394d4b55f570
   RxTest: e634f15fd2c2cd0e0120132ef7a4f7be69ad0393
 
-PODFILE CHECKSUM: 94aff5f165a808af218a50b92a104e0f16b8271b
+PODFILE CHECKSUM: 8abf4a70b064c140903fe685ddbf7c0b34626352
 
 COCOAPODS: 1.4.0

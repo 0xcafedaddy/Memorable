@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XGt-FR-Hat">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XGt-FR-Hat">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="PingFang.ttc">
-            <string>PingFangSC-Light</string>
-        </array>
-    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Main Memo Controller-->
         <scene sceneID="eKq-tk-DHA">
             <objects>
-                <viewController id="XGt-FR-Hat" sceneMemberID="viewController">
+                <viewController id="XGt-FR-Hat" customClass="MainMemoController" customModule="Memorable" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nK2-SG-KDz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -65,23 +60,35 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="haa-kq-qAz">
+                                <rect key="frame" x="16" y="83" width="343" height="521"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="2JJ-yJ-79q" firstAttribute="centerX" secondItem="nK2-SG-KDz" secondAttribute="centerX" id="1pF-Hm-j0N"/>
                             <constraint firstItem="qGg-vh-diU" firstAttribute="leading" secondItem="AKo-CB-aYQ" secondAttribute="leading" constant="16" id="2JP-9G-Ps7"/>
                             <constraint firstItem="AKo-CB-aYQ" firstAttribute="bottom" secondItem="qGg-vh-diU" secondAttribute="bottom" constant="20" id="IJE-ID-Vsi"/>
+                            <constraint firstItem="haa-kq-qAz" firstAttribute="top" secondItem="2JJ-yJ-79q" secondAttribute="bottom" constant="8" id="KWH-W4-GHw"/>
                             <constraint firstItem="cdu-O2-5K9" firstAttribute="centerX" secondItem="nK2-SG-KDz" secondAttribute="centerX" id="OLB-8T-bZV"/>
                             <constraint firstItem="MPF-tx-VZE" firstAttribute="top" secondItem="AKo-CB-aYQ" secondAttribute="top" constant="15" id="UYr-Rk-e3B"/>
                             <constraint firstItem="2JJ-yJ-79q" firstAttribute="top" secondItem="AKo-CB-aYQ" secondAttribute="top" constant="2" id="UgH-3i-Yjx"/>
+                            <constraint firstItem="haa-kq-qAz" firstAttribute="leading" secondItem="AKo-CB-aYQ" secondAttribute="leading" constant="16" id="bqK-7a-ekl"/>
                             <constraint firstItem="AKo-CB-aYQ" firstAttribute="bottom" secondItem="cdu-O2-5K9" secondAttribute="bottom" constant="20" id="gN0-Kb-A78"/>
+                            <constraint firstItem="qGg-vh-diU" firstAttribute="top" secondItem="haa-kq-qAz" secondAttribute="bottom" constant="8" id="hlw-Ue-byx"/>
+                            <constraint firstItem="haa-kq-qAz" firstAttribute="centerX" secondItem="nK2-SG-KDz" secondAttribute="centerX" id="laV-3M-jrZ"/>
                             <constraint firstItem="AKo-CB-aYQ" firstAttribute="trailing" secondItem="rV9-os-x1g" secondAttribute="trailing" constant="16" id="mEx-jK-bt0"/>
                             <constraint firstItem="MPF-tx-VZE" firstAttribute="centerY" secondItem="2JJ-yJ-79q" secondAttribute="centerY" id="mru-IW-Jm7"/>
+                            <constraint firstItem="AKo-CB-aYQ" firstAttribute="trailing" secondItem="haa-kq-qAz" secondAttribute="trailing" constant="16" id="nXi-uh-Sqg"/>
                             <constraint firstItem="AKo-CB-aYQ" firstAttribute="bottom" secondItem="rV9-os-x1g" secondAttribute="bottom" constant="20" id="v9j-Ft-c2Q"/>
                             <constraint firstItem="AKo-CB-aYQ" firstAttribute="trailing" secondItem="MPF-tx-VZE" secondAttribute="trailing" constant="16" id="vvh-3E-g1z"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AKo-CB-aYQ"/>
                     </view>
+                    <connections>
+                        <outlet property="memoryTaskTableView" destination="haa-kq-qAz" id="qEQ-15-jjD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yK4-0B-m0U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

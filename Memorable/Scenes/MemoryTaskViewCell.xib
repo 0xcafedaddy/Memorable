@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="327" id="Vha-Q4-oKj" customClass="MemoryTaskViewCell" customModule="Memorable" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="496" height="327"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vha-Q4-oKj" id="GHL-Mq-Qq9">
+                <rect key="frame" x="0.0" y="0.0" width="496" height="326.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6pf-hp-uxP" customClass="RotatedView" customModule="FoldingCell">
+                        <rect key="frame" x="20" y="11" width="456" height="126"/>
+                        <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="126" id="4eg-rm-mez"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="snH-tj-XdD" customClass="RotatedView" customModule="FoldingCell">
+                        <rect key="frame" x="20" y="145" width="456" height="134"/>
+                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="134" id="q03-1R-L7O"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="snH-tj-XdD" firstAttribute="trailing" secondItem="GHL-Mq-Qq9" secondAttribute="trailingMargin" id="ByC-Ih-HYR"/>
+                    <constraint firstItem="snH-tj-XdD" firstAttribute="top" secondItem="6pf-hp-uxP" secondAttribute="bottom" constant="8" id="b8J-Mr-IGu"/>
+                    <constraint firstItem="6pf-hp-uxP" firstAttribute="trailing" secondItem="GHL-Mq-Qq9" secondAttribute="trailingMargin" id="cgx-UN-Sce"/>
+                    <constraint firstItem="6pf-hp-uxP" firstAttribute="leading" secondItem="GHL-Mq-Qq9" secondAttribute="leadingMargin" id="fgk-uK-9Rc"/>
+                    <constraint firstItem="snH-tj-XdD" firstAttribute="leading" secondItem="GHL-Mq-Qq9" secondAttribute="leadingMargin" id="gYw-cn-ofb"/>
+                    <constraint firstItem="6pf-hp-uxP" firstAttribute="top" secondItem="GHL-Mq-Qq9" secondAttribute="topMargin" id="rKd-YS-IXV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="itemCount">
+                    <integer key="value" value="2"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="containerView" destination="snH-tj-XdD" id="HVB-QM-W4R"/>
+                <outlet property="containerViewTop" destination="b8J-Mr-IGu" id="eE2-Zh-1zK"/>
+                <outlet property="foregroundView" destination="6pf-hp-uxP" id="0kp-DV-mYH"/>
+                <outlet property="foregroundViewTop" destination="rKd-YS-IXV" id="fSP-zM-fiE"/>
+            </connections>
+            <point key="canvasLocation" x="-168" y="143.5"/>
+        </tableViewCell>
+    </objects>
+</document>
