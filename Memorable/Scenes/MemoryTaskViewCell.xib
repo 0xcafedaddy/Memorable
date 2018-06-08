@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="327" id="Vha-Q4-oKj" customClass="MemoryTaskViewCell" customModule="Memorable" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MemoryTaskViewCell" rowHeight="327" id="Vha-Q4-oKj" customClass="MemoryTaskViewCell" customModule="Memorable" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="496" height="327"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vha-Q4-oKj" id="GHL-Mq-Qq9">
@@ -21,6 +21,29 @@
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6pf-hp-uxP" customClass="RotatedView" customModule="FoldingCell">
                         <rect key="frame" x="20" y="11" width="456" height="126"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0K-vA-ubJ" userLabel="Title Label">
+                                <rect key="frame" x="8" y="23" width="278" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eqz-NW-24j">
+                                <rect key="frame" x="8" y="81" width="165" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQY-tf-HfQ">
+                                <rect key="frame" x="181" y="81" width="184" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="126" id="4eg-rm-mez"/>
@@ -53,6 +76,9 @@
                 <outlet property="containerViewTop" destination="b8J-Mr-IGu" id="eE2-Zh-1zK"/>
                 <outlet property="foregroundView" destination="6pf-hp-uxP" id="0kp-DV-mYH"/>
                 <outlet property="foregroundViewTop" destination="rKd-YS-IXV" id="fSP-zM-fiE"/>
+                <outlet property="groupLabel" destination="Eqz-NW-24j" id="cdc-0d-ish"/>
+                <outlet property="timeLabel" destination="gQY-tf-HfQ" id="WOt-4b-Hsb"/>
+                <outlet property="titleLabel" destination="a0K-vA-ubJ" id="1nL-bw-aj8"/>
             </connections>
             <point key="canvasLocation" x="-168" y="143.5"/>
         </tableViewCell>

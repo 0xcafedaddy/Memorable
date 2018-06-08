@@ -25,5 +25,11 @@ class DefaultMainMemoNavigator: MainMemoNavigator {
         self.navigationController = navigationController
         self.storyBoard = storyBoard
     }
+    
+    func toMainMemo() {
+        let vc = storyBoard.instantiateViewController(ofType: MainMemoController.self)
+        vc.viewModel = MainMemoViewModel(navigator: self)
+        navigationController.pushViewController(vc, animated: true)
+    }
 }
 
