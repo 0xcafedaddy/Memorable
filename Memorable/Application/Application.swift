@@ -26,6 +26,7 @@ final class Application {
     func configureMainInterface(in window: UIWindow) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let mainNavigationController = UINavigationController()
+        mainNavigationController.setNavigationBarHidden(true, animated: true)
         let mainNavigator = DefaultMainMemoNavigator(services: realmUseCaseProvider,
                                                 navigationController: mainNavigationController,
                                                 storyBoard: storyboard)

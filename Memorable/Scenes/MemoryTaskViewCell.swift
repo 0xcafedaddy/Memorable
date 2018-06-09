@@ -10,10 +10,13 @@ import UIKit
 import FoldingCell
 
 class MemoryTaskViewCell: FoldingCell {
-
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var groupLabel: UILabel!
-    @IBOutlet weak var timeLabel: UILabel!
+    
+    
+    @IBOutlet var titleLabel: UILabel!
+    
+    @IBOutlet var groupLabel: UILabel!
+    
+    @IBOutlet var timeLabel: UILabel!
     
     func bind(_ viewModel:MemoryTaskViewModel) {
         self.titleLabel.text = viewModel.title

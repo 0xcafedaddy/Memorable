@@ -46,8 +46,8 @@ class MainMemoController: UIViewController , UITableViewDelegate{
     
     // MARK: UI
     
-    let kCloseCellHeight: CGFloat = 179
-    let kOpenCellHeight: CGFloat = 488
+    let kCloseCellHeight: CGFloat = 130
+    let kOpenCellHeight: CGFloat = 300
     let kRowsCount = 10
     var cellHeights: [CGFloat] = []
     
@@ -59,7 +59,7 @@ class MainMemoController: UIViewController , UITableViewDelegate{
         memoryTaskTableView.refreshControl = UIRefreshControl()
         memoryTaskTableView.refreshControl?.addTarget(self, action: #selector(refreshHandler), for: .valueChanged)
         
-        memoryTaskTableView.register(MemoryTaskViewCell.self, forCellReuseIdentifier: MemoryTaskViewCell.reuseID)
+        memoryTaskTableView.delegate = self
     }
     
     @objc func refreshHandler() {
@@ -72,7 +72,7 @@ class MainMemoController: UIViewController , UITableViewDelegate{
         })
     }
     
-    private func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    internal func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return cellHeights[indexPath.row]
     }
     
@@ -90,7 +90,7 @@ class MainMemoController: UIViewController , UITableViewDelegate{
         }
     }
     
-    private func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: IndexPath) {
+    internal func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath) as! MemoryTaskViewCell
         
         if cell.isAnimating() {

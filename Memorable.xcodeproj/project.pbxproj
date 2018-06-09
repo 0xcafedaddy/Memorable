@@ -16,7 +16,6 @@
 		6348CB9D20C9255D00FBA568 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6348CB9C20C9255D00FBA568 /* Task.swift */; };
 		6348CBA120CA556300FBA568 /* TasksUserCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6348CBA020CA556300FBA568 /* TasksUserCase.swift */; };
 		6353AF6C20C6425B00690A36 /* MemoryTaskViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6353AF6B20C6425B00690A36 /* MemoryTaskViewCell.swift */; };
-		6353AF7020C66D2A00690A36 /* MemoryTaskViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6353AF6F20C66D2A00690A36 /* MemoryTaskViewCell.xib */; };
 		63A28BAB20C11FB300701927 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A28BAA20C11FB300701927 /* AppDelegate.swift */; };
 		63A28BB220C11FB300701927 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A28BB020C11FB300701927 /* Main.storyboard */; };
 		63A28BB420C11FB300701927 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63A28BB320C11FB300701927 /* Assets.xcassets */; };
@@ -185,7 +184,6 @@
 		6348CB9C20C9255D00FBA568 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		6348CBA020CA556300FBA568 /* TasksUserCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksUserCase.swift; sourceTree = "<group>"; };
 		6353AF6B20C6425B00690A36 /* MemoryTaskViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryTaskViewCell.swift; sourceTree = "<group>"; };
-		6353AF6F20C66D2A00690A36 /* MemoryTaskViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemoryTaskViewCell.xib; sourceTree = "<group>"; };
 		63A28BA720C11FB300701927 /* Memorable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memorable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63A28BAA20C11FB300701927 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63A28BB120C11FB300701927 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -380,7 +378,6 @@
 			isa = PBXGroup;
 			children = (
 				6353AF6B20C6425B00690A36 /* MemoryTaskViewCell.swift */,
-				6353AF6F20C66D2A00690A36 /* MemoryTaskViewCell.xib */,
 				6348CB9A20C918EB00FBA568 /* MemoryTaskViewModel.swift */,
 			);
 			name = MemoryTaskTable;
@@ -1074,7 +1071,6 @@
 			files = (
 				63A28BB720C11FB300701927 /* LaunchScreen.storyboard in Resources */,
 				63A28BB420C11FB300701927 /* Assets.xcassets in Resources */,
-				6353AF7020C66D2A00690A36 /* MemoryTaskViewCell.xib in Resources */,
 				63A28BB220C11FB300701927 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
