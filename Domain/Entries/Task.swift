@@ -20,7 +20,7 @@ public struct Task {
     }
     
     public init(title: String,group: String) {
-        self.init(title: title, group: group, time: String(round(Date().timeIntervalSince1970 * 1000)))
+        self.init(title: title, group: group, time: Date().description)
     }
 }
 
