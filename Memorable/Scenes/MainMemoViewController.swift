@@ -46,8 +46,8 @@ class MainMemoController: UIViewController , UITableViewDelegate{
     
     // MARK: UI
     
-    let kCloseCellHeight: CGFloat = 130
-    let kOpenCellHeight: CGFloat = 300
+    let kCloseCellHeight: CGFloat = 100
+    let kOpenCellHeight: CGFloat = 305
     let kRowsCount = 10
     var cellHeights: [CGFloat] = []
     
