@@ -90,8 +90,12 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L64-RK-XTx" customClass="RotatedView" customModule="FoldingCell">
                                                     <rect key="frame" x="15" y="11" width="345" height="89"/>
                                                     <subviews>
+                                                        <view alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8oS-vO-pgU">
+                                                            <rect key="frame" x="0.0" y="0.0" width="207" height="89"/>
+                                                            <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3K-fb-oLU" userLabel="Title Label">
-                                                            <rect key="frame" x="8" y="21.5" width="282" height="35"/>
+                                                            <rect key="frame" x="8" y="22" width="282" height="35"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="35" id="0CX-lG-rqS"/>
                                                             </constraints>
@@ -136,7 +140,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstItem="zB7-yX-l8t" firstAttribute="leading" secondItem="hL8-VN-2Dt" secondAttribute="trailing" constant="8" id="093-zU-v03"/>
                                                         <constraint firstItem="3U2-bN-E18" firstAttribute="leading" secondItem="L64-RK-XTx" secondAttribute="leading" constant="8" id="6Sp-Lb-rQt"/>
@@ -147,11 +151,15 @@
                                                         <constraint firstItem="w3K-fb-oLU" firstAttribute="leading" secondItem="L64-RK-XTx" secondAttribute="leading" constant="8" id="VZv-cx-dzn"/>
                                                         <constraint firstAttribute="trailing" secondItem="JtZ-gi-mVZ" secondAttribute="trailing" constant="8" id="ZTr-xr-3UA"/>
                                                         <constraint firstAttribute="bottom" secondItem="3U2-bN-E18" secondAttribute="bottom" constant="11" id="ZsN-th-la4"/>
+                                                        <constraint firstAttribute="trailing" secondItem="8oS-vO-pgU" secondAttribute="trailing" constant="138" id="iZQ-yI-dXa"/>
+                                                        <constraint firstItem="8oS-vO-pgU" firstAttribute="top" secondItem="L64-RK-XTx" secondAttribute="top" id="mh9-ei-sky"/>
                                                         <constraint firstItem="hL8-VN-2Dt" firstAttribute="leading" secondItem="3U2-bN-E18" secondAttribute="trailing" constant="8" id="ovr-zb-fGL"/>
                                                         <constraint firstItem="hL8-VN-2Dt" firstAttribute="baseline" secondItem="zB7-yX-l8t" secondAttribute="baseline" constant="3" id="sjp-VA-nuT"/>
                                                         <constraint firstItem="zB7-yX-l8t" firstAttribute="trailing" secondItem="w3K-fb-oLU" secondAttribute="trailing" id="taz-kn-fxU"/>
+                                                        <constraint firstItem="8oS-vO-pgU" firstAttribute="leading" secondItem="L64-RK-XTx" secondAttribute="leading" id="uqc-Xq-raC"/>
                                                         <constraint firstAttribute="height" constant="89" id="vFu-YX-4m7"/>
                                                         <constraint firstItem="JtZ-gi-mVZ" firstAttribute="centerY" secondItem="L64-RK-XTx" secondAttribute="centerY" constant="-5.5" id="vue-ZO-qJa"/>
+                                                        <constraint firstAttribute="bottom" secondItem="8oS-vO-pgU" secondAttribute="bottom" id="xnQ-q3-CxK"/>
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="shK-O2-VaH" customClass="RotatedView" customModule="FoldingCell">
@@ -217,6 +225,7 @@
                                             <outlet property="foregroundView" destination="L64-RK-XTx" id="FRY-fX-1QG"/>
                                             <outlet property="foregroundViewTop" destination="m2E-Pp-hHA" id="tPG-kp-l7d"/>
                                             <outlet property="groupLabel" destination="3U2-bN-E18" id="w6O-tz-JR9"/>
+                                            <outlet property="progressConstr" destination="iZQ-yI-dXa" id="cE5-RV-Icf"/>
                                             <outlet property="timeLabel" destination="zB7-yX-l8t" id="tD7-XX-HFs"/>
                                             <outlet property="titleLabel" destination="w3K-fb-oLU" id="wlh-du-X6t"/>
                                         </connections>
