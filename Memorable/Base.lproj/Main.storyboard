@@ -10,6 +10,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Light.ttf">
+            <string>OpenSans-Light</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Main Memo Controller-->
         <scene sceneID="eKq-tk-DHA">
@@ -92,7 +97,7 @@
                                                     <subviews>
                                                         <view alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8oS-vO-pgU">
                                                             <rect key="frame" x="0.0" y="0.0" width="207" height="89"/>
-                                                            <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="backgroundColor" red="0.52641254829999995" green="0.71606166250000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3K-fb-oLU" userLabel="Title Label">
                                                             <rect key="frame" x="8" y="22" width="282" height="35"/>
@@ -163,44 +168,216 @@
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="shK-O2-VaH" customClass="RotatedView" customModule="FoldingCell">
-                                                    <rect key="frame" x="15" y="108" width="345" height="295"/>
+                                                    <rect key="frame" x="15" y="108" width="345" height="381"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31231" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7p-pW-ARy">
-                                                            <rect key="frame" x="8" y="22" width="46" height="21"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1231" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5VS-Qe-9nt">
-                                                            <rect key="frame" x="8" y="87" width="36" height="21"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1231" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAb-Cv-muF">
-                                                            <rect key="frame" x="8" y="154" width="36" height="21"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1231" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ic-BN-yfg">
-                                                            <rect key="frame" x="8" y="210" width="36" height="21"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1GX-7y-EbY" customClass="RotatedView" customModule="FoldingCell">
+                                                            <rect key="frame" x="0.0" y="0.0" width="345" height="154"/>
+                                                            <subviews>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="hod-T4-LIX">
+                                                                    <rect key="frame" x="0.0" y="48" width="345" height="106"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="345" id="Wmv-Ha-MOd"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ScQ-aY-hOr">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="345" height="48"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# 2618-3157" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ma4-kL-qxW">
+                                                                            <rect key="frame" x="0.0" y="13" width="345" height="21"/>
+                                                                            <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="18"/>
+                                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WkB-9b-7eX">
+                                                                            <rect key="frame" x="8" y="9" width="30" height="30"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="30" id="gUf-kg-T9W"/>
+                                                                            </constraints>
+                                                                            <state key="normal" title="Button" image="edit"/>
+                                                                        </button>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfQ-ub-zRh">
+                                                                            <rect key="frame" x="312" y="12" width="25" height="25"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="25" id="KdY-MF-yVH"/>
+                                                                            </constraints>
+                                                                            <state key="normal" title="Button" image="delete"/>
+                                                                        </button>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" red="0.52641254830763207" green="0.71606166252612613" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstItem="Ma4-kL-qxW" firstAttribute="leading" secondItem="ScQ-aY-hOr" secondAttribute="leading" id="Adi-3n-zpX"/>
+                                                                        <constraint firstItem="WkB-9b-7eX" firstAttribute="leading" secondItem="ScQ-aY-hOr" secondAttribute="leadingMargin" id="Dz9-yb-rjC"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="Ma4-kL-qxW" secondAttribute="trailing" id="KrT-zq-1bI"/>
+                                                                        <constraint firstItem="WkB-9b-7eX" firstAttribute="top" secondItem="ScQ-aY-hOr" secondAttribute="top" constant="9" id="S9Y-yc-qM2"/>
+                                                                        <constraint firstItem="WkB-9b-7eX" firstAttribute="centerY" secondItem="ScQ-aY-hOr" secondAttribute="centerY" id="Z3Z-Hs-wiH"/>
+                                                                        <constraint firstItem="OfQ-ub-zRh" firstAttribute="trailing" secondItem="ScQ-aY-hOr" secondAttribute="trailingMargin" id="e86-jQ-bgx"/>
+                                                                        <constraint firstItem="WkB-9b-7eX" firstAttribute="centerY" secondItem="OfQ-ub-zRh" secondAttribute="centerY" id="evK-1m-V6H"/>
+                                                                        <constraint firstItem="WkB-9b-7eX" firstAttribute="centerY" secondItem="Ma4-kL-qxW" secondAttribute="centerY" id="rTG-qK-4o1"/>
+                                                                        <constraint firstItem="OfQ-ub-zRh" firstAttribute="top" secondItem="ScQ-aY-hOr" secondAttribute="top" constant="12" id="xgH-ix-Bdg"/>
+                                                                    </constraints>
+                                                                </view>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="bottom" secondItem="ScQ-aY-hOr" secondAttribute="bottom" constant="106" id="3Qy-mD-NM1"/>
+                                                                <constraint firstItem="ScQ-aY-hOr" firstAttribute="top" secondItem="1GX-7y-EbY" secondAttribute="top" id="A8P-VZ-BSd"/>
+                                                                <constraint firstItem="hod-T4-LIX" firstAttribute="leading" secondItem="ScQ-aY-hOr" secondAttribute="leading" id="Ht8-pG-Mjz"/>
+                                                                <constraint firstItem="ScQ-aY-hOr" firstAttribute="leading" secondItem="1GX-7y-EbY" secondAttribute="leading" id="Tha-OM-X8r"/>
+                                                                <constraint firstAttribute="bottom" secondItem="hod-T4-LIX" secondAttribute="bottom" id="dyP-p8-YuN"/>
+                                                                <constraint firstItem="hod-T4-LIX" firstAttribute="trailing" secondItem="ScQ-aY-hOr" secondAttribute="trailing" id="f1q-Wf-auv"/>
+                                                                <constraint firstItem="hod-T4-LIX" firstAttribute="top" secondItem="ScQ-aY-hOr" secondAttribute="bottom" id="hHI-qa-CrL"/>
+                                                                <constraint firstAttribute="trailing" secondItem="ScQ-aY-hOr" secondAttribute="trailing" id="ue2-bb-n5v"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hdR-Ip-n9x" customClass="RotatedView" customModule="FoldingCell">
+                                                            <rect key="frame" x="0.0" y="154" width="345" height="219"/>
+                                                            <subviews>
+                                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Gou-R6-Dmk">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="345" height="219"/>
+                                                                    <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <mutableString key="text">汉皇重色思倾国，御宇多年求不得。
+
+杨家有女初长成，养在深闺人未识。
+
+天生丽质难自弃，一朝选在君王侧。
+
+回眸一笑百媚生，六宫粉黛无颜色。
+
+春寒赐浴华清池，温泉水滑洗凝脂。
+
+侍儿扶起娇无力，始是新承恩泽时。
+
+云鬓花颜金步摇，芙蓉帐暖度春宵。
+
+春宵苦短日高起，从此君王不早朝。
+
+承欢侍宴无闲暇，春从春游夜专夜。
+
+后宫佳丽三千人，三千宠爱在一身。
+
+金屋妆成娇侍夜，玉楼宴罢醉和春。
+
+姊妹弟兄皆列土，可怜光彩生门户。
+
+遂令天下父母心，不重生男重生女。
+
+骊宫高处入青云，仙乐风飘处处闻。
+
+缓歌慢舞凝丝竹，尽日君王看不足。
+
+渔阳鼙鼓动地来，惊破霓裳羽衣曲。
+
+九重城阙烟尘生，千乘万骑西南行。
+
+翠华摇摇行复止，西出都门百余里。
+
+六军不发无奈何，宛转蛾眉马前死。
+
+花钿委地无人收，翠翘金雀玉搔头。
+
+君王掩面救不得，回看血泪相和流。
+
+黄埃散漫风萧索，云栈萦纡登剑阁。
+
+峨嵋山下少人行，旌旗无光日色薄。
+
+蜀江水碧蜀山青，圣主朝朝暮暮情。
+
+行宫见月伤心色，夜雨闻铃肠断声。
+
+天旋地转回龙驭，到此踌躇不能去。
+
+马嵬坡下泥土中，不见玉颜空死处。
+
+君臣相顾尽沾衣，东望都门信马归。
+
+归来池苑皆依旧，太液芙蓉未央柳。
+
+芙蓉如面柳如眉，对此如何不泪垂。
+
+春风桃李花开日，秋雨梧桐叶落时。
+
+西宫南内多秋草，落叶满阶红不扫。
+
+梨园弟子白发新，椒房阿监青娥老。
+
+夕殿萤飞思悄然，孤灯挑尽未成眠。
+
+迟迟钟鼓初长夜，耿耿星河欲曙天。
+
+鸳鸯瓦冷霜华重，翡翠衾寒谁与共。
+
+悠悠生死别经年，魂魄不曾来入梦。
+
+临邛道士鸿都客，能以精诚致魂魄。
+
+为感君王辗转思，遂教方士殷勤觅。
+
+排空驭气奔如电，升天入地求之遍。
+
+上穷碧落下黄泉，两处茫茫皆不见。
+
+忽闻海上有仙山，山在虚无缥渺间。
+
+楼阁玲珑五云起，其中绰约多仙子。
+
+中有一人字太真，雪肤花貌参差是。
+
+金阙西厢叩玉扃，转教小玉报双成。
+
+闻道汉家天子使，九华帐里梦魂惊。
+
+揽衣推枕起徘徊，珠箔银屏迤逦开。
+
+云鬓半偏新睡觉，花冠不整下堂来。
+
+风吹仙袂飘飖举，犹似霓裳羽衣舞。
+
+玉容寂寞泪阑干，梨花一枝春带雨。
+
+含情凝睇谢君王，一别音容两渺茫。
+
+昭阳殿里恩爱绝，蓬莱宫中日月长。
+
+回头下望人寰处，不见长安见尘雾。
+
+惟将旧物表深情，钿合金钗寄将去。
+
+钗留一股合一扇，钗擘黄金合分钿。
+
+但教心似金钿坚，天上人间会相见。
+
+临别殷勤重寄词，词中有誓两心知。
+
+七月七日长生殿，夜半无人私语时。
+
+在天愿作比翼鸟，在地愿为连理枝。
+
+天长地久有时尽，此恨绵绵无绝期。</mutableString>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                </textView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="Gou-R6-Dmk" secondAttribute="trailing" id="Jq1-2Y-b2A"/>
+                                                                <constraint firstAttribute="bottom" secondItem="Gou-R6-Dmk" secondAttribute="bottom" id="PMJ-Wt-ztc"/>
+                                                                <constraint firstItem="Gou-R6-Dmk" firstAttribute="leading" secondItem="hdR-Ip-n9x" secondAttribute="leading" id="gfy-6J-136"/>
+                                                                <constraint firstItem="Gou-R6-Dmk" firstAttribute="top" secondItem="hdR-Ip-n9x" secondAttribute="top" id="xD2-vI-fhn"/>
+                                                            </constraints>
+                                                        </view>
                                                     </subviews>
-                                                    <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
-                                                        <constraint firstItem="5VS-Qe-9nt" firstAttribute="top" secondItem="p7p-pW-ARy" secondAttribute="bottom" constant="44" id="233-1P-tcF"/>
-                                                        <constraint firstItem="XAb-Cv-muF" firstAttribute="top" secondItem="5VS-Qe-9nt" secondAttribute="bottom" constant="46" id="2X0-O8-ytc"/>
-                                                        <constraint firstItem="p7p-pW-ARy" firstAttribute="leading" secondItem="5VS-Qe-9nt" secondAttribute="leading" id="MFT-LR-EiK"/>
-                                                        <constraint firstItem="p7p-pW-ARy" firstAttribute="leading" secondItem="shK-O2-VaH" secondAttribute="leadingMargin" id="TPy-wy-RMV"/>
-                                                        <constraint firstItem="5VS-Qe-9nt" firstAttribute="leading" secondItem="XAb-Cv-muF" secondAttribute="leading" id="WKT-2S-G8x"/>
-                                                        <constraint firstAttribute="height" constant="295" id="YYK-XR-V1f"/>
-                                                        <constraint firstItem="7ic-BN-yfg" firstAttribute="top" secondItem="XAb-Cv-muF" secondAttribute="bottom" constant="35" id="g9q-uj-9wb"/>
-                                                        <constraint firstItem="p7p-pW-ARy" firstAttribute="top" secondItem="shK-O2-VaH" secondAttribute="top" constant="22" id="ih7-dc-wiE"/>
-                                                        <constraint firstItem="XAb-Cv-muF" firstAttribute="leading" secondItem="7ic-BN-yfg" secondAttribute="leading" id="oN8-7C-nAU"/>
+                                                        <constraint firstAttribute="bottom" secondItem="hdR-Ip-n9x" secondAttribute="bottom" constant="8" id="1Xp-Sk-hip"/>
+                                                        <constraint firstAttribute="trailing" secondItem="1GX-7y-EbY" secondAttribute="trailing" id="6Gb-Lo-Hry"/>
+                                                        <constraint firstItem="1GX-7y-EbY" firstAttribute="leading" secondItem="shK-O2-VaH" secondAttribute="leading" id="Rmv-o8-1qb"/>
+                                                        <constraint firstAttribute="bottom" secondItem="1GX-7y-EbY" secondAttribute="bottom" constant="227" id="RpH-oc-Xxb"/>
+                                                        <constraint firstItem="1GX-7y-EbY" firstAttribute="top" secondItem="shK-O2-VaH" secondAttribute="top" id="TvT-Z1-EYc"/>
+                                                        <constraint firstAttribute="height" constant="381" id="YYK-XR-V1f"/>
+                                                        <constraint firstItem="hdR-Ip-n9x" firstAttribute="trailing" secondItem="1GX-7y-EbY" secondAttribute="trailing" id="eYh-JU-rmj"/>
+                                                        <constraint firstItem="hdR-Ip-n9x" firstAttribute="leading" secondItem="1GX-7y-EbY" secondAttribute="leading" id="rC3-Pb-1Yc"/>
+                                                        <constraint firstItem="hdR-Ip-n9x" firstAttribute="top" secondItem="1GX-7y-EbY" secondAttribute="bottom" id="sam-tb-orV"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -215,7 +392,7 @@
                                         </tableViewCellContentView>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="itemCount">
-                                                <integer key="value" value="3"/>
+                                                <integer key="value" value="4"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -226,8 +403,9 @@
                                             <outlet property="foregroundViewTop" destination="m2E-Pp-hHA" id="tPG-kp-l7d"/>
                                             <outlet property="groupLabel" destination="3U2-bN-E18" id="w6O-tz-JR9"/>
                                             <outlet property="progressConstr" destination="iZQ-yI-dXa" id="cE5-RV-Icf"/>
+                                            <outlet property="tileLabelFront" destination="w3K-fb-oLU" id="qTS-KT-UlJ"/>
                                             <outlet property="timeLabel" destination="zB7-yX-l8t" id="tD7-XX-HFs"/>
-                                            <outlet property="titleLabel" destination="w3K-fb-oLU" id="wlh-du-X6t"/>
+                                            <outlet property="titleLabel" destination="Ma4-kL-qxW" id="GkT-mq-o8k"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -262,7 +440,10 @@
     <resources>
         <image name="Record" width="200" height="200"/>
         <image name="addTask" width="200" height="200"/>
+        <image name="delete" width="200" height="200"/>
+        <image name="edit" width="200" height="200"/>
         <image name="filter" width="200" height="200"/>
+        <image name="image" width="596" height="399"/>
         <image name="setting" width="200" height="192"/>
         <image name="uncheck" width="200" height="200"/>
     </resources>

@@ -14,6 +14,7 @@ class MemoryTaskViewCell: FoldingCell {
     
     @IBOutlet var titleLabel: UILabel!
     
+    @IBOutlet var tileLabelFront: UILabel!
     @IBOutlet var groupLabel: UILabel!
     
     @IBOutlet var timeLabel: UILabel!
@@ -22,9 +23,9 @@ class MemoryTaskViewCell: FoldingCell {
     @IBOutlet var progressConstr: NSLayoutConstraint!
     func bind(_ viewModel:MemoryTaskViewModel) {
         self.titleLabel.text = viewModel.title
+        self.tileLabelFront.text = viewModel.title
         self.groupLabel.text = viewModel.group
         self.timeLabel.text = viewModel.time
-        self.progressConstr.constant = 50
     }
     
     override func awakeFromNib() {

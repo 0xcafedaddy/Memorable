@@ -47,9 +47,9 @@ class MainMemoController: UIViewController , UITableViewDelegate{
     // MARK: UI
     
     let kCloseCellHeight: CGFloat = 100
-    let kOpenCellHeight: CGFloat = 305
+    let kOpenCellHeight: CGFloat = 410
     let kRowsCount = 10
-    var cellHeights: [CGFloat] = []
+    var cellHeights: [CGFloat] = [100,48,106,219]
     
     private func configureTableView() {
         cellHeights = Array(repeating: kCloseCellHeight, count: kRowsCount)
