@@ -27,6 +27,7 @@ PODS:
   - RxSwift (4.1.2)
   - RxTest (4.1.2):
     - RxSwift (~> 4.0)
+  - TZImagePickerController (2.1.5)
 
 DEPENDENCIES:
   - Alamofire
@@ -43,6 +44,7 @@ DEPENDENCIES:
   - RxRealm
   - RxSwift (~> 4.0)
   - RxTest (~> 4.0)
+  - TZImagePickerController
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
@@ -59,7 +61,8 @@ SPEC CHECKSUMS:
   RxRealm: a6c6c0a07cb61f34209969ca6657734edfdfff30
   RxSwift: e49536837d9901277638493ea537394d4b55f570
   RxTest: e634f15fd2c2cd0e0120132ef7a4f7be69ad0393
+  TZImagePickerController: e60a73665cf665c18abd45cdf48e912094eefff5
 
-PODFILE CHECKSUM: 8abf4a70b064c140903fe685ddbf7c0b34626352
+PODFILE CHECKSUM: 84f66629fc3a095d4d4d4f34da88c510b840d481
 
 COCOAPODS: 1.4.0

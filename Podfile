@@ -23,6 +23,7 @@ target 'Memorable' do
   rx_swift
   pod 'QueryKit'
   pod 'FoldingCell'
+  pod 'TZImagePickerController'
   target 'MemorableTests' do
     inherit! :search_paths
     test_pods
