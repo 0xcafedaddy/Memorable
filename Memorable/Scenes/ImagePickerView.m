@@ -7,6 +7,7 @@
 //
 
 #import "ImagePickerView.h"
+#import "TZImagePickerController.h"
 
 @implementation ImagePickerView
 

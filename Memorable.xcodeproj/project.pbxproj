@@ -387,6 +387,15 @@
 			name = MemoryTaskTable;
 			sourceTree = "<group>";
 		};
+		6387590A20D1172400C09D6B /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				63BE80EE20D0F4D2002877F0 /* ImagePickerView.h */,
+				63BE80EF20D0F4D2002877F0 /* ImagePickerView.m */,
+			);
+			name = ImagePicker;
+			sourceTree = "<group>";
+		};
 		63A28B9E20C11FB300701927 = {
 			isa = PBXGroup;
 			children = (
@@ -497,12 +506,11 @@
 		63A28BDE20C1299D00701927 /* Create */ = {
 			isa = PBXGroup;
 			children = (
+				6387590A20D1172400C09D6B /* ImagePicker */,
 				63A28CB520C2C19C00701927 /* CreateNavigator.swift */,
 				63A28CB720C2C1B300701927 /* CreateViewController.swift */,
 				63A28CB920C2C1C200701927 /* CreateViewModel.swift */,
 				63BE80EA20D0BCD1002877F0 /* Memorable-Bridging-Header.h */,
-				63BE80EE20D0F4D2002877F0 /* ImagePickerView.h */,
-				63BE80EF20D0F4D2002877F0 /* ImagePickerView.m */,
 			);
 			name = Create;
 			sourceTree = "<group>";

@@ -10,7 +10,6 @@ import UIKit
 import Domain
 import RxSwift
 import RxCocoa
-import TZImagePickerController
 
 class CreateViewController: UIViewController{
     private let disposeBag = DisposeBag()
