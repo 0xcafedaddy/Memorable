@@ -1,5 +1,5 @@
 //
-//  ImagePickerView.h
+//  ImagePicker.h
 //  Memorable
 //
 //  Created by jarvis on 2018/6/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ImagePickerView : UIView
+@interface ImagePicker : NSObject
 
 @end

@@ -16,6 +16,7 @@ class CreateViewController: UIViewController{
     
     var viewModel: CreateViewModel!
     
+    @IBOutlet var imagePickCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
         bindViewModel()
