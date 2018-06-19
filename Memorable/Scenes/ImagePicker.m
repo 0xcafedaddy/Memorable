@@ -24,12 +24,49 @@
 
 @implementation ImagePicker
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+-(id)init
+{
+    self = [super init];
+    if(self)
+    {
+        _selectedPhotos = [NSMutableArray array];
+        _selectedAssets = [NSMutableArray array];
+    }
+    
+    return self;
 }
-*/
+
+- (void)configureWithCollectionView:(UICollectionView *)collectionView
+{
+    _collectionView = collectionView;
+}
+
+- (UIImagePickerController *)imagePickerVc {
+    if (_imagePickerVc == nil) {
+        _imagePickerVc = [[UIImagePickerController alloc] init];
+        _imagePickerVc.delegate = self;
+        // set appearance / 改变相册选择页的导航栏外观
+//        if (iOS7Later) {
+//            _imagePickerVc.navigationBar.barTintColor = self.navigationController.navigationBar.barTintColor;
+//        }
+//        _imagePickerVc.navigationBar.tintColor = self.navigationController.navigationBar.tintColor;
+        UIBarButtonItem *tzBarItem, *BarItem;
+        if (iOS9Later) {
+            tzBarItem = [UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[TZImagePickerController class]]];
+            BarItem = [UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UIImagePickerController class]]];
+        } else {
+            tzBarItem = [UIBarButtonItem appearanceWhenContainedIn:[TZImagePickerController class], nil];
+            BarItem = [UIBarButtonItem appearanceWhenContainedIn:[UIImagePickerController class], nil];
+        }
+        NSDictionary *titleTextAttributes = [tzBarItem titleTextAttributesForState:UIControlStateNormal];
+        [BarItem setTitleTextAttributes:titleTextAttributes forState:UIControlStateNormal];
+        
+    }
+    return _imagePickerVc;
+}
+
+- (BOOL)prefersStatusBarHidden {
+    return NO;
+}
 
 @end

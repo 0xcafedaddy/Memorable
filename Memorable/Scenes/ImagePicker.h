@@ -10,4 +10,6 @@
 
 @interface ImagePicker : NSObject
 
+- (void)configureWithCollectionView:(UICollectionView *)collectionView;
+
 @end

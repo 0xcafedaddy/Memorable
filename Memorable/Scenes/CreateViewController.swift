@@ -13,13 +13,19 @@ import RxCocoa
 
 class CreateViewController: UIViewController{
     private let disposeBag = DisposeBag()
+    private var imagePicker: ImagePicker = ImagePicker()
     
     var viewModel: CreateViewModel!
     
     @IBOutlet var imagePickCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureUI()
         bindViewModel()
+    }
+    
+    private func configureUI() {
+        imagePicker.configure(with: imagePickCollectionView)
     }
     
     private func bindViewModel() {
