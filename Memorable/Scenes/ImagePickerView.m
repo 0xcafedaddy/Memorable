@@ -46,8 +46,9 @@
     _layout = [[UICollectionViewFlowLayout alloc] init];
     _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:_layout];
     CGFloat rgb = 244 / 255.0;
-    _collectionView.alwaysBounceVertical = YES;
-    _collectionView.backgroundColor = [UIColor redColor];
+    _collectionView.alwaysBounceHorizontal = YES;
+    _collectionView.alwaysBounceVertical = NO;
+    _collectionView.backgroundColor = [UIColor whiteColor];
     _collectionView.contentInset = UIEdgeInsetsMake(4, 4, 4, 4);
     _collectionView.dataSource = self;
     _collectionView.delegate = self;
@@ -59,10 +60,11 @@
 
 - (void)layoutCollectionView{
     _margin = 4;
-    _itemWH = ([self viewController].view.tz_width - 2 * _margin - 4) / 3 - _margin;
+    _itemWH = self.tz_height - 2 * _margin;
     _layout.itemSize = CGSizeMake(_itemWH, _itemWH);
     _layout.minimumInteritemSpacing = _margin;
     _layout.minimumLineSpacing = _margin;
+    _layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     [self.collectionView setCollectionViewLayout:_layout];
     self.collectionView.frame = CGRectMake(0, 0, self.tz_width, self.tz_height);
 }
