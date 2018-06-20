@@ -13,19 +13,25 @@ import RxCocoa
 
 class CreateViewController: UIViewController{
     private let disposeBag = DisposeBag()
-    private var imagePicker: ImagePicker = ImagePicker()
     
     var viewModel: CreateViewModel!
     
-    @IBOutlet var imagePickCollectionView: UICollectionView!
+    
+    @IBOutlet var imagePicker: ImagePickerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
         bindViewModel()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        imagePicker.configCollectionView()
+        imagePicker.layoutCollectionView()
+    }
+    
     private func configureUI() {
-        imagePicker.configure(with: imagePickCollectionView)
     }
     
     private func bindViewModel() {
@@ -33,6 +39,9 @@ class CreateViewController: UIViewController{
 //        let viewWillAppear = rx.sentMessage(#selector(UIViewController.viewWillAppear(_:)))
 //            .mapToVoid()
 //            .asDriverOnErrorJustComplete()
+    }
+    @IBAction func cancelBtnClicked(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
 }
 

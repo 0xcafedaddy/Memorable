@@ -1,5 +1,5 @@
 //
-//  ImagePicker.h
+//  ImagePickerView.h
 //  Memorable
 //
 //  Created by jarvis on 2018/6/13.
@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ImagePicker : NSObject
+@interface ImagePickerView : UIView
 
-- (void)configureWithCollectionView:(UICollectionView *)collectionView;
+- (void)configCollectionView;
+- (void)layoutCollectionView;
 
 @end
