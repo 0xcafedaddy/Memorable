@@ -49,7 +49,8 @@ class CreateViewController: UIViewController{
     @IBAction func saveBtnClicked(_ sender: Any) {
     }
     @IBAction func groupViewClicked(_ sender: UITapGestureRecognizer) {
-        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(ofType: GroupsViewController.self)
         
     }
 }

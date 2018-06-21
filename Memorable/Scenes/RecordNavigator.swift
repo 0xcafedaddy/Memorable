@@ -13,7 +13,7 @@ protocol RecordNavigator {
     
 }
 
-class DefaultRecordNavigator: RecordNavigator {
+final class DefaultRecordNavigator: RecordNavigator {
     private let storyBoard: UIStoryboard
     private let navigationController: UINavigationController
     private let services: UseCaseProvider

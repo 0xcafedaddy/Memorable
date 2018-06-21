@@ -12,6 +12,9 @@
 		14513EA6BC0926762752DE4B /* Pods_NetworkPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53A5467734C54AB6E40D447 /* Pods_NetworkPlatform.framework */; };
 		2EE45D18D33463E1FB0ED393 /* Pods_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928F2367B5CF9DED3D4131D0 /* Pods_Domain.framework */; };
 		33C6259DAF278285A03D238F /* Pods_NetworkPlatformTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB261913A8004E755038795 /* Pods_NetworkPlatformTests.framework */; };
+		631DD39A20DB7C2800031D39 /* GroupsNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631DD39920DB7C2800031D39 /* GroupsNavigator.swift */; };
+		631DD39C20DB7C3A00031D39 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631DD39B20DB7C3A00031D39 /* GroupsViewController.swift */; };
+		631DD39E20DB7C5600031D39 /* GroupsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631DD39D20DB7C5600031D39 /* GroupsViewModel.swift */; };
 		6348CB9B20C918EB00FBA568 /* MemoryTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6348CB9A20C918EB00FBA568 /* MemoryTaskViewModel.swift */; };
 		6348CB9D20C9255D00FBA568 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6348CB9C20C9255D00FBA568 /* Task.swift */; };
 		6348CBA120CA556300FBA568 /* TasksUserCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6348CBA020CA556300FBA568 /* TasksUserCase.swift */; };
@@ -182,6 +185,9 @@
 		27650FF99C7B189EFFB8B934 /* Pods-DomainTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DomainTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DomainTests/Pods-DomainTests.release.xcconfig"; sourceTree = "<group>"; };
 		36050D8CF1D10725FD9D848B /* Pods-DomainTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DomainTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DomainTests/Pods-DomainTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DB261913A8004E755038795 /* Pods_NetworkPlatformTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkPlatformTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		631DD39920DB7C2800031D39 /* GroupsNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsNavigator.swift; sourceTree = "<group>"; };
+		631DD39B20DB7C3A00031D39 /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
+		631DD39D20DB7C5600031D39 /* GroupsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewModel.swift; sourceTree = "<group>"; };
 		6348CB9A20C918EB00FBA568 /* MemoryTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryTaskViewModel.swift; sourceTree = "<group>"; };
 		6348CB9C20C9255D00FBA568 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		6348CBA020CA556300FBA568 /* TasksUserCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksUserCase.swift; sourceTree = "<group>"; };
@@ -381,6 +387,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		631DD39820DB7BF800031D39 /* Groups */ = {
+			isa = PBXGroup;
+			children = (
+				631DD39920DB7C2800031D39 /* GroupsNavigator.swift */,
+				631DD39B20DB7C3A00031D39 /* GroupsViewController.swift */,
+				631DD39D20DB7C5600031D39 /* GroupsViewModel.swift */,
+			);
+			name = Groups;
+			sourceTree = "<group>";
+		};
 		6353AF6A20C6421100690A36 /* MemoryTaskTable */ = {
 			isa = PBXGroup;
 			children = (
@@ -488,6 +504,7 @@
 		63A28BDC20C1295000701927 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				631DD39820DB7BF800031D39 /* Groups */,
 				63A28C9C20C2BFB500701927 /* Record */,
 				63A28C9B20C2BF7E00701927 /* Filter */,
 				63A28C9920C2B59A00701927 /* MainMemo */,
@@ -1578,6 +1595,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				631DD39C20DB7C3A00031D39 /* GroupsViewController.swift in Sources */,
 				63A28CBA20C2C1C200701927 /* CreateViewModel.swift in Sources */,
 				63A28CA020C2C08C00701927 /* MainMemoViewController.swift in Sources */,
 				63A28C6920C149B000701927 /* Application.swift in Sources */,
@@ -1588,6 +1606,7 @@
 				63A28CA820C2C0EB00701927 /* RecordViewModel.swift in Sources */,
 				63A28CB620C2C19C00701927 /* CreateNavigator.swift in Sources */,
 				63A28CC220C3C9F000701927 /* Observable+Ext.swift in Sources */,
+				631DD39A20DB7C2800031D39 /* GroupsNavigator.swift in Sources */,
 				63A28CB020C2C15E00701927 /* PersonInfoNavigator.swift in Sources */,
 				63A28CBC20C2C36200701927 /* ViewModelType.swift in Sources */,
 				6348CB9B20C918EB00FBA568 /* MemoryTaskViewModel.swift in Sources */,
@@ -1598,6 +1617,7 @@
 				63A28BAB20C11FB300701927 /* AppDelegate.swift in Sources */,
 				63A28CA220C2C0A400701927 /* MainMemoViewModel.swift in Sources */,
 				63A28CB220C2C17800701927 /* PersonInfoViewController.swift in Sources */,
+				631DD39E20DB7C5600031D39 /* GroupsViewModel.swift in Sources */,
 				6353AF6C20C6425B00690A36 /* MemoryTaskViewCell.swift in Sources */,
 				63A28CAE20C2C14000701927 /* FilterViewModel.swift in Sources */,
 				63BE80F020D0F4D2002877F0 /* ImagePickerView.m in Sources */,
