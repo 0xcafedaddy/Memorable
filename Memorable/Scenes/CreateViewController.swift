@@ -16,8 +16,11 @@ class CreateViewController: UIViewController{
     
     var viewModel: CreateViewModel!
     
+    @IBOutlet var tf_TaskName: UITextField!
     
+    @IBOutlet var tf_TaskDescription: UITextView!
     @IBOutlet var imagePicker: ImagePickerView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +45,12 @@ class CreateViewController: UIViewController{
     }
     @IBAction func cancelBtnClicked(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+    }
+    @IBAction func saveBtnClicked(_ sender: Any) {
+    }
+    @IBAction func groupViewClicked(_ sender: UITapGestureRecognizer) {
+        
+        
     }
 }
 

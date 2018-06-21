@@ -487,6 +487,9 @@
                                                 <integer key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="saveBtnClicked:" destination="9Kz-MV-5bM" eventType="touchUpInside" id="8ty-Ax-fiO"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOR-ia-n0S">
                                         <rect key="frame" x="193" y="22" width="65" height="28"/>
@@ -575,6 +578,7 @@
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstItem="88v-EF-0Ei" firstAttribute="top" secondItem="aUz-CC-jBF" secondAttribute="topMargin" id="1OF-s1-Qz2"/>
                                             <constraint firstItem="8xo-eZ-hbz" firstAttribute="bottom" secondItem="88v-EF-0Ei" secondAttribute="bottom" id="DvO-zA-avS"/>
@@ -583,6 +587,9 @@
                                             <constraint firstItem="88v-EF-0Ei" firstAttribute="trailing" secondItem="aUz-CC-jBF" secondAttribute="trailingMargin" id="nGc-Ge-ZuG"/>
                                             <constraint firstItem="8xo-eZ-hbz" firstAttribute="leading" secondItem="aUz-CC-jBF" secondAttribute="leadingMargin" id="rwb-ri-ksh"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="vHD-tR-On3" appends="YES" id="ZOx-70-8QJ"/>
+                                        </connections>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GROUP:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sg7-44-MJV">
                                         <rect key="frame" x="15" y="689" width="96" height="21"/>
@@ -651,9 +658,16 @@
                     <size key="freeformSize" width="375" height="864"/>
                     <connections>
                         <outlet property="imagePicker" destination="xfl-uw-hyT" id="DjK-mm-5Sa"/>
+                        <outlet property="tf_TaskDescription" destination="tOi-Sf-eO9" id="8IY-rf-B9X"/>
+                        <outlet property="tf_TaskName" destination="iEz-at-9gp" id="2Rx-Dq-1yI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dpa-cG-XOx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="vHD-tR-On3">
+                    <connections>
+                        <action selector="groupViewClicked:" destination="9Kz-MV-5bM" id="gxN-Z9-mNA"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1325.5999999999999" y="434.48275862068971"/>
         </scene>
