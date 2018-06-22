@@ -18,6 +18,8 @@ class CreateViewController: UIViewController{
     
     @IBOutlet var tf_TaskName: UITextField!
     
+    @IBAction func groupsViewTapped(_ sender: UITapGestureRecognizer) {
+    }
     @IBOutlet var groupsViewTap: UITapGestureRecognizer!
     @IBOutlet var saveBtn: UIButton!
     @IBOutlet var cancelBtn: UIButton!
@@ -50,20 +52,12 @@ class CreateViewController: UIViewController{
                                           groupsTrigger:groupsViewTap.rx.event.asDriver())
         let output = viewModel.transform(input: input)
         
-        
-    }
-    @IBAction func cancelBtnClicked(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
-    @IBAction func saveBtnClicked(_ sender: Any) {
-    }
-    @IBAction func groupViewClicked(_ sender: UITapGestureRecognizer) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(ofType: GroupsViewController.self)
-        
-        vc.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
-        
-        self.present(vc, animated: true, completion: nil)
+        output.mainMemo
+            .drive()
+            .disposed(by: disposeBag)
+        output.mainMemo
+            .drive()
+            .disposed(by: disposeBag)
         
     }
 }

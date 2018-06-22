@@ -34,12 +34,13 @@ class DefaultMainMemoNavigator: MainMemoNavigator {
     }
     
     func toCreate() {
-        let navigator = DefaultCreateNavigator(navigationController: navigationController)
-        let viewModel = CreateViewModel(navigator: navigator)
         let vc = storyBoard.instantiateViewController(ofType: CreateViewController.self)
+        let navigator = DefaultCreateNavigator(services: services,
+                                               currentController: vc,
+                                               storyBoard: storyBoard)
+        let viewModel = CreateViewModel(navigator: navigator)
         vc.viewModel = viewModel
-        let nc = UINavigationController(rootViewController: vc)
-        navigationController.present(nc, animated: true, completion: nil)
+        navigationController.present(vc, animated: true, completion: nil)
     }
 }
 

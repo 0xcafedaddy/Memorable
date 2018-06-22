@@ -16,31 +16,30 @@ protocol CreateNavigator {
 
 class DefaultCreateNavigator: CreateNavigator {
     private let storyBoard: UIStoryboard
-    private let navigationController: UINavigationController
+    private let currentController: UIViewController
     private let services: UseCaseProvider
     
     init(services: UseCaseProvider,
-         navigationController: UINavigationController,
+         currentController: UIViewController,
          storyBoard: UIStoryboard) {
         self.services = services
-        self.navigationController = navigationController
+        self.currentController = currentController
         self.storyBoard = storyBoard
     }
     
     func toMainMemo() {
-        navigationController.dismiss(animated: true, completion: nil)
+        currentController.dismiss(animated: true, completion: nil)
     }
     
     func toGroups() {
+        let vc = storyBoard.instantiateViewController(ofType: GroupsViewController.self)
         let navigator = DefaultGroupsNavigator(services: services,
-                                               navigationController: navigationController,
+                                               currentController: vc,
                                                storyBoard: storyBoard)
         let viewModel = GroupsViewModel(navigator: navigator)
-        let vc = storyBoard.instantiateViewController(ofType: GroupsViewController.self)
         vc.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
         vc.viewModel = viewModel
-        let nc = UINavigationController(rootViewController: vc)
-        navigationController.present(nc, animated: true, completion: nil)
+        currentController.present(vc, animated: true, completion: nil)
     }
 }
 

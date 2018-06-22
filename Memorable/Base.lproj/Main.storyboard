@@ -501,9 +501,6 @@
                                                 <integer key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="cancelBtnClicked:" destination="9Kz-MV-5bM" eventType="touchUpInside" id="1PI-q4-2PM"/>
-                                        </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="iEz-at-9gp">
                                         <rect key="frame" x="15" y="126" width="314" height="30"/>
@@ -664,7 +661,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dpa-cG-XOx" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="vHD-tR-On3">
                     <connections>
-                        <action selector="groupViewClicked:" destination="9Kz-MV-5bM" id="gxN-Z9-mNA"/>
+                        <action selector="groupsViewTapped:" destination="9Kz-MV-5bM" id="h73-wa-oUi"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
