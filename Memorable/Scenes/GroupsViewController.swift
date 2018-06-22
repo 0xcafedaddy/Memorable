@@ -18,7 +18,12 @@ class GroupsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureUI()
         bindViewModel()
+    }
+    
+    func configureUI() {
+        self.view.backgroundColor = UIColor.black.withAlphaComponent(0)
     }
     
     private func bindViewModel() {
@@ -28,5 +33,6 @@ class GroupsViewController: UIViewController {
         //            .asDriverOnErrorJustComplete()
     }
     @IBAction func quitBtnClicked(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
 }

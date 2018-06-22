@@ -23,6 +23,11 @@ final class CreateViewModel: ViewModelType {
     func transform(input: Input) -> Output {
         return Output()
     }
+    
+    private let navigator: CreateNavigator
+    init(navigator: CreateNavigator) {
+        self.navigator = navigator
+    }
 }
 
 

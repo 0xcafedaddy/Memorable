@@ -14,16 +14,14 @@ protocol CreateNavigator {
 }
 
 class DefaultCreateNavigator: CreateNavigator {
-    private let storyBoard: UIStoryboard
     private let navigationController: UINavigationController
-    private let services: UseCaseProvider
     
-    init(services: UseCaseProvider,
-         navigationController: UINavigationController,
-         storyBoard: UIStoryboard) {
-        self.services = services
+    init(navigationController: UINavigationController) {
         self.navigationController = navigationController
-        self.storyBoard = storyBoard
+    }
+    
+    func toMainMemo() {
+        navigationController.dismiss(animated: true, completion: nil)
     }
 }
 

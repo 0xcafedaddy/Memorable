@@ -10,7 +10,8 @@ import UIKit
 import Domain
 
 protocol MainMemoNavigator {
-    
+    func toMainMemo()
+    func toCreate()
 }
 
 class DefaultMainMemoNavigator: MainMemoNavigator {
@@ -30,6 +31,15 @@ class DefaultMainMemoNavigator: MainMemoNavigator {
         let vc = storyBoard.instantiateViewController(ofType: MainMemoController.self)
         vc.viewModel = MainMemoViewModel(navigator: self)
         navigationController.pushViewController(vc, animated: true)
+    }
+    
+    func toCreate() {
+        let navigator = DefaultCreateNavigator(navigationController: navigationController)
+        let viewModel = CreateViewModel(navigator: navigator)
+        let vc = storyBoard.instantiateViewController(ofType: CreateViewController.self)
+        vc.viewModel = viewModel
+        let nc = UINavigationController(rootViewController: vc)
+        navigationController.present(nc, animated: true, completion: nil)
     }
 }
 

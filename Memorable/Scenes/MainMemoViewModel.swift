@@ -15,10 +15,13 @@ final class MainMemoViewModel: ViewModelType {
     
     struct Input {
         let trigger: Driver<Void>
+        let CreateTaskTrigger: Driver<Void>
         let selection: Driver<IndexPath>
+        
     }
     struct Output {
         let taskCell: Driver<[MemoryTaskViewModel]>
+        let createTask: Driver<Void>
     }
     
     private let navigator: MainMemoNavigator
@@ -32,7 +35,11 @@ final class MainMemoViewModel: ViewModelType {
             return Driver.just([MemoryTaskViewModel(with: Task(title: "长恨歌-白居易",group: "诗歌")),MemoryTaskViewModel(with: Task(title: "沁园春长沙",group: "毛泽东诗词"))])
         }
         
-        return Output(taskCell: taskCell)
+        let createTask = input.CreateTaskTrigger
+            .do(onNext: navigator.toCreate)
+        
+        return Output(taskCell: taskCell,
+                      createTask: createTask)
     }
 }
 

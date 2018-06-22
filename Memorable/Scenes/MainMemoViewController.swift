@@ -14,6 +14,7 @@ import RxCocoa
 class MainMemoController: UIViewController , UITableViewDelegate{
     private let disposeBag = DisposeBag()
     
+    @IBOutlet var createBtn: UIButton!
     @IBOutlet var memoryTaskTableView: UITableView!
     var viewModel: MainMemoViewModel!
     
@@ -33,7 +34,8 @@ class MainMemoController: UIViewController , UITableViewDelegate{
             .asDriver()
         
         let input = MainMemoViewModel.Input(trigger: Driver.merge(viewWillAppear, pull),
-                                         selection: memoryTaskTableView.rx.itemSelected.asDriver())
+                                            CreateTaskTrigger:createBtn.rx.tap.asDriver(),
+                                            selection: memoryTaskTableView.rx.itemSelected.asDriver())
         
         let output = viewModel.transform(input: input)
         //Bind Posts to UITableView
@@ -41,6 +43,10 @@ class MainMemoController: UIViewController , UITableViewDelegate{
             cell.bind(viewModel)
             
         }.disposed(by: disposeBag)
+        
+        output.createTask
+            .drive()
+            .disposed(by: disposeBag)
     }
     
     

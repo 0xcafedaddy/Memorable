@@ -438,6 +438,7 @@
                         <viewLayoutGuide key="safeArea" id="AKo-CB-aYQ"/>
                     </view>
                     <connections>
+                        <outlet property="createBtn" destination="cdu-O2-5K9" id="R9O-Ip-Rv8"/>
                         <outlet property="memoryTaskTableView" destination="haa-kq-qAz" id="qEQ-15-jjD"/>
                     </connections>
                 </viewController>
@@ -448,7 +449,7 @@
         <!--Create View Controller-->
         <scene sceneID="hnv-y6-j2A">
             <objects>
-                <viewController id="9Kz-MV-5bM" customClass="CreateViewController" customModule="Memorable" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreateViewController" id="9Kz-MV-5bM" customClass="CreateViewController" customModule="Memorable" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Izk-3a-RKV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="864"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -674,7 +675,7 @@
         <!--Groups View Controller-->
         <scene sceneID="nxh-RY-FuM">
             <objects>
-                <viewController id="cSI-UG-N4w" customClass="GroupsViewController" customModule="Memorable" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GroupsViewController" id="cSI-UG-N4w" customClass="GroupsViewController" customModule="Memorable" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zye-ze-9md">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

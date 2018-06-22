@@ -52,6 +52,10 @@ class CreateViewController: UIViewController{
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(ofType: GroupsViewController.self)
         
+        vc.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+        
+        self.present(vc, animated: true, completion: nil)
+        
     }
 }
 
