@@ -18,6 +18,9 @@ class CreateViewController: UIViewController{
     
     @IBOutlet var tf_TaskName: UITextField!
     
+    @IBOutlet var groupsViewTap: UITapGestureRecognizer!
+    @IBOutlet var saveBtn: UIButton!
+    @IBOutlet var cancelBtn: UIButton!
     @IBOutlet var tf_TaskDescription: UITextView!
     @IBOutlet var imagePicker: ImagePickerView!
     
@@ -38,10 +41,16 @@ class CreateViewController: UIViewController{
     }
     
     private func bindViewModel() {
-//        assert(viewModel != nil)
-//        let viewWillAppear = rx.sentMessage(#selector(UIViewController.viewWillAppear(_:)))
-//            .mapToVoid()
-//            .asDriverOnErrorJustComplete()
+        assert(viewModel != nil)
+        let viewWillAppear = rx.sentMessage(#selector(UIViewController.viewWillAppear(_:)))
+            .mapToVoid()
+            .asDriverOnErrorJustComplete()
+        
+        let input = CreateViewModel.Input(mainMemoTrigger:cancelBtn.rx.tap.asDriver(),
+                                          groupsTrigger:groupsViewTap.rx.event.asDriver())
+        let output = viewModel.transform(input: input)
+        
+        
     }
     @IBAction func cancelBtnClicked(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)

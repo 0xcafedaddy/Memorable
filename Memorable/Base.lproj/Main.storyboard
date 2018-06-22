@@ -40,11 +40,6 @@
                                     <constraint firstAttribute="width" constant="35" id="xYk-Ss-dQt"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="addTask"/>
-                                <connections>
-                                    <segue destination="9Kz-MV-5bM" kind="popoverPresentation" popoverAnchorView="cdu-O2-5K9" id="YGl-jL-hOG">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rV9-os-x1g" userLabel="SettingBtn">
                                 <rect key="frame" x="324" y="612" width="35" height="35"/>
@@ -658,7 +653,10 @@
                     </view>
                     <size key="freeformSize" width="375" height="864"/>
                     <connections>
+                        <outlet property="cancelBtn" destination="bOR-ia-n0S" id="ZRE-Cj-WU7"/>
+                        <outlet property="groupsViewTap" destination="vHD-tR-On3" id="FmQ-Al-1Ou"/>
                         <outlet property="imagePicker" destination="xfl-uw-hyT" id="DjK-mm-5Sa"/>
+                        <outlet property="saveBtn" destination="XwW-yc-3Gc" id="cDu-2m-L19"/>
                         <outlet property="tf_TaskDescription" destination="tOi-Sf-eO9" id="8IY-rf-B9X"/>
                         <outlet property="tf_TaskName" destination="iEz-at-9gp" id="2Rx-Dq-1yI"/>
                     </connections>

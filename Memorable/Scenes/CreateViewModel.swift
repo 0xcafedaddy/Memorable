@@ -14,14 +14,23 @@ import RxCocoa
 final class CreateViewModel: ViewModelType {
     
     struct Input {
-        
+        let mainMemoTrigger: Driver<Void>
+        let groupsTrigger: Driver<Void>
     }
     struct Output {
-        
+        let mainMemo: Driver<Void>
+        let groups: Driver<Void>
     }
     
     func transform(input: Input) -> Output {
-        return Output()
+        
+        let mainMemo = input.mainMemoTrigger
+            .do(onNext: navigator.toMainMemo)
+        
+        let groups = input.groupsTrigger
+            .do(onNext: navigator.toGroups)
+        
+        return Output(mainMemo: mainMemo, groups: groups)
     }
     
     private let navigator: CreateNavigator

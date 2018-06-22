@@ -23,4 +23,9 @@ final class GroupsViewModel: ViewModelType {
     func transform(input: Input) -> Output {
         return Output()
     }
+    
+    private let navigator: GroupsNavigator
+    init(navigator: GroupsNavigator) {
+        self.navigator = navigator
+    }
 }
