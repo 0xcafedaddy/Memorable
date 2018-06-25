@@ -15,11 +15,11 @@ final class CreateViewModel: ViewModelType {
     
     struct Input {
         let mainMemoTrigger: Driver<Void>
-        let groupsTrigger: Driver<UITapGestureRecognizer>
+        let groupsTrigger: Driver<Void>
     }
     struct Output {
         let mainMemo: Driver<Void>
-        let groups: Driver<UITapGestureRecognizer>
+        let groups: Driver<Void>
     }
     
     func transform(input: Input) -> Output {
@@ -28,9 +28,7 @@ final class CreateViewModel: ViewModelType {
             .do(onNext: navigator.toMainMemo)
         
         let groups = input.groupsTrigger
-            .do(onNext:{ _ in
-                self.navigator.toGroups()
-            })
+            .do(onNext: navigator.toGroups)
         
         return Output(mainMemo: mainMemo, groups: groups)
     }

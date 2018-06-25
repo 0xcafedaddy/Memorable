@@ -17,10 +17,11 @@ class CreateViewController: UIViewController{
     var viewModel: CreateViewModel!
     
     @IBOutlet var tf_TaskName: UITextField!
+
     
-    @IBAction func groupsViewTapped(_ sender: UITapGestureRecognizer) {
-    }
-    @IBOutlet var groupsViewTap: UITapGestureRecognizer!
+
+    @IBOutlet var groupsBtn: UIButton!
+    @IBOutlet var groupNameBtn: UIButton!
     @IBOutlet var saveBtn: UIButton!
     @IBOutlet var cancelBtn: UIButton!
     @IBOutlet var tf_TaskDescription: UITextView!
@@ -47,15 +48,16 @@ class CreateViewController: UIViewController{
         let viewWillAppear = rx.sentMessage(#selector(UIViewController.viewWillAppear(_:)))
             .mapToVoid()
             .asDriverOnErrorJustComplete()
+        let groupsTrigger = Driver.of(groupsBtn.rx.tap.asDriver(),groupNameBtn.rx.tap.asDriver()).merge()
         
         let input = CreateViewModel.Input(mainMemoTrigger:cancelBtn.rx.tap.asDriver(),
-                                          groupsTrigger:groupsViewTap.rx.event.asDriver())
+                                          groupsTrigger:groupsTrigger)
         let output = viewModel.transform(input: input)
         
         output.mainMemo
             .drive()
             .disposed(by: disposeBag)
-        output.mainMemo
+        output.groups
             .drive()
             .disposed(by: disposeBag)
         
