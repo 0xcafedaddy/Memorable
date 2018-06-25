@@ -14,6 +14,7 @@ import RxCocoa
 class GroupsViewController: UIViewController {
     private let disposeBag = DisposeBag()
     
+    @IBOutlet var quitBtn: UIButton!
     var viewModel: GroupsViewModel!
     
     override func viewDidLoad() {
@@ -27,12 +28,14 @@ class GroupsViewController: UIViewController {
     }
     
     private func bindViewModel() {
-        //        assert(viewModel != nil)
-        //        let viewWillAppear = rx.sentMessage(#selector(UIViewController.viewWillAppear(_:)))
-        //            .mapToVoid()
-        //            .asDriverOnErrorJustComplete()
-    }
-    @IBAction func quitBtnClicked(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        assert(viewModel != nil)
+        let viewWillAppear = rx.sentMessage(#selector(UIViewController.viewWillAppear(_:)))
+            .mapToVoid()
+            .asDriverOnErrorJustComplete()
+        let input = GroupsViewModel.Input(completeTrigger: quitBtn.rx.tap.asDriver())
+        let output = viewModel.transform(input: input)
+        output.complete
+            .drive()
+            .disposed(by: disposeBag)
     }
 }

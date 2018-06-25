@@ -695,9 +695,6 @@
                                                 <constraint firstAttribute="width" constant="35" id="Zfe-4c-JgQ"/>
                                             </constraints>
                                             <state key="normal" image="quitGroups"/>
-                                            <connections>
-                                                <action selector="quitBtnClicked:" destination="cSI-UG-N4w" eventType="touchUpInside" id="oAB-c0-SaG"/>
-                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9q-ft-FUJ">
                                             <rect key="frame" x="154" y="21" width="67" height="30"/>
@@ -779,6 +776,9 @@
                         <viewLayoutGuide key="safeArea" id="zcM-xc-k0s"/>
                     </view>
                     <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="quitBtn" destination="1VJ-jR-9bj" id="AZa-Jx-xWQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dfS-JW-Cuv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

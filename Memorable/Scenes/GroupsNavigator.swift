@@ -10,7 +10,7 @@ import UIKit
 import Domain
 
 protocol GroupsNavigator {
-    
+    func toCreate()
 }
 
 final class DefaultGroupsNavigator: GroupsNavigator {
