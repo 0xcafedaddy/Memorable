@@ -406,7 +406,9 @@
                                             <outlet property="foregroundView" destination="L64-RK-XTx" id="FRY-fX-1QG"/>
                                             <outlet property="foregroundViewTop" destination="m2E-Pp-hHA" id="tPG-kp-l7d"/>
                                             <outlet property="groupLabel" destination="3U2-bN-E18" id="w6O-tz-JR9"/>
+                                            <outlet property="imgExample" destination="hod-T4-LIX" id="jII-qp-AoN"/>
                                             <outlet property="progressConstr" destination="iZQ-yI-dXa" id="cE5-RV-Icf"/>
+                                            <outlet property="textView" destination="Gou-R6-Dmk" id="WxF-HY-o1v"/>
                                             <outlet property="tileLabelFront" destination="w3K-fb-oLU" id="qTS-KT-UlJ"/>
                                             <outlet property="timeLabel" destination="zB7-yX-l8t" id="tD7-XX-HFs"/>
                                             <outlet property="titleLabel" destination="Ma4-kL-qxW" id="GkT-mq-o8k"/>

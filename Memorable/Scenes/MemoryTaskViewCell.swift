@@ -19,6 +19,8 @@ class MemoryTaskViewCell: FoldingCell {
     
     @IBOutlet var timeLabel: UILabel!
     
+    @IBOutlet var imgExample: UIImageView!
+    @IBOutlet var textView: UITextView!
     @IBOutlet var checkBtn: UIButton!
     @IBOutlet var progressConstr: NSLayoutConstraint!
     func bind(_ viewModel:MemoryTaskViewModel) {

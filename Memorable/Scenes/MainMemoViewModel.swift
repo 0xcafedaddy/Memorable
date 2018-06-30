@@ -32,7 +32,8 @@ final class MainMemoViewModel: ViewModelType {
     func transform(input: Input) -> Output {
         
         let taskCell = input.trigger.flatMapLatest {
-            return Driver.just([MemoryTaskViewModel(with: Task(title: "长恨歌-白居易",group: "诗歌")),MemoryTaskViewModel(with: Task(title: "沁园春长沙",group: "毛泽东诗词"))])
+            let imgs = [#imageLiteral(resourceName: "image")]
+            return Driver.just([MemoryTaskViewModel(with: Task(title: "长恨歌-白居易",group: "诗歌"), images: imgs, text: "hahahahahahaha"),MemoryTaskViewModel(with: Task(title: "沁园春长沙",group: "毛泽东诗词", images: imgs, text: "hahahahahahaha"))])
         }
         
         let createTask = input.CreateTaskTrigger
